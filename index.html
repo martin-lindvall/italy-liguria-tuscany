@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liguria &amp; Toscana – reseguide</title>
+  <meta name="description" content="Reseguide till västra Ligurien och Toscana.">
+  <!-- Håll sidan borta från sökmotorer och arkiv -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#c2562b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23c2562b'/%3E%3Cpath d='M18 64c14-10 22-10 32 0s18 10 32 0' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./">Liguria &amp; Toscana</a>
+    <nav class="topnav" aria-label="Resmål">
+      <a href="liguria.html">Liguria</a>
+      <a href="#toscana" class="soon">Toscana</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <figure class="media" data-wiki="Italian Riviera" data-alt="Italienska Rivieran"></figure>
+  <div class="wrap">
+    <span class="eyebrow">Reseguide · Italien</span>
+    <h1>Från Rivieran<br>till Toscana</h1>
+    <p class="lede">Byar på bergssluttningar, olivlundar, havsutsikt och långa luncher – en guide till två av Italiens mest älskade regioner.</p>
+    <div class="chips">
+      <a class="chip" href="liguria.html" style="text-decoration:none">→ Till Liguria-guiden</a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section id="resmal">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Resmål</span>
+        <h2>Två regioner, två tempon</h2>
+        <p>Välj ett resmål för tips på byar, mat, vin, natur och praktiska detaljer – med karta och vägbeskrivningar.</p>
+      </div>
+
+      <div class="dest-grid">
+        <a class="dest" href="liguria.html">
+          <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua" data-label=" "></figure>
+          <span class="status">Ligurien</span>
+          <div class="dest-body">
+            <h3>Civezza &amp; Ponente Liguria</h3>
+            <p>Kustbyar, bergsbyar vid franska gränsen, Taggiasca-oliver och en bilfri cykelled längs havet.</p>
+            <span class="btn btn--solid">Öppna guiden →</span>
+          </div>
+        </a>
+
+        <div class="dest soon" id="toscana">
+          <figure class="media" data-wiki="Val d'Orcia" data-alt="Toscanska landskap" data-label=" "></figure>
+          <span class="status">Kommer snart</span>
+          <div class="dest-body">
+            <h3>Toscana</h3>
+            <p>Cypressalléer, vingårdar och renässansstäder. Guiden är under arbete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="karta">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Översikt</span>
+        <h2>Var ligger det?</h2>
+      </div>
+      <div class="map-shell">
+        <div class="map" data-map role="region" aria-label="Översiktskarta" style="height:clamp(320px,50vh,480px)"></div>
+      </div>
+      <!-- Markörer för översiktskartan -->
+      <div hidden>
+        <div class="place" data-cat="bas" data-lat="43.8790" data-lng="7.9530"
+             data-name="Civezza & Ponente Liguria" data-href="liguria.html" data-mapq="Civezza, Italy"
+             data-short="Västra Rivieran – kust, bergsbyar och olivlundar."></div>
+        <div class="place" data-cat="by" data-lat="43.4000" data-lng="11.2000"
+             data-name="Toscana" data-mapq="Toscana, Italy"
+             data-short="Guiden kommer snart."></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Bilder hämtas från Wikipedia/Wikimedia Commons; klicka på ”Foto”-länken i varje bild för fotograf och licens. Kartdata © OpenStreetMap-bidragsgivare, kartstil © CARTO.</p>
+    <p><button class="theme-toggle" type="button" data-theme-toggle>Växla ljust/mörkt tema</button></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>

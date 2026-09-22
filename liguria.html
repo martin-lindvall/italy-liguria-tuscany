@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ponente Liguria – reseguide</title>
+  <meta name="description" content="Reseguide till Civezza och västra Ligurien: kustbyar, bergsbyar, mat, vin, olivolja och natur.">
+  <!-- Håll sidan borta från sökmotorer och arkiv -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#c2562b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23c2562b'/%3E%3Cpath d='M18 64c14-10 22-10 32 0s18 10 32 0' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./">Liguria &amp; Toscana</a>
+    <nav class="topnav" aria-label="Resmål">
+      <a href="liguria.html" aria-current="page">Liguria</a>
+      <a href="./#toscana" class="soon">Toscana</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <figure class="media" data-wiki="Cervo, Liguria" data-alt="Byn Cervo vid havet"></figure>
+  <div class="wrap">
+    <span class="eyebrow">Riviera di Ponente · Ligurien · Italien</span>
+    <h1>Civezza &amp; Ponente Liguria</h1>
+    <p class="lede">Olivlundar, medeltida bergsbyar och en bilfri cykelled längs havet – den västra, lugnare delen av italienska Rivieran.</p>
+    <div class="chips">
+      <span class="chip">☀ Bäst vår &amp; tidig höst</span>
+      <span class="chip">🫒 Taggiasca-oliver</span>
+      <span class="chip">🍷 Rossese di Dolceacqua</span>
+      <span class="chip">🚲 24 km cykelled</span>
+    </div>
+  </div>
+</div>
+
+<nav class="sectionnav" aria-label="Innehåll">
+  <div class="wrap">
+    <ul>
+      <li><a href="#oversikt">Översikt</a></li>
+      <li><a href="#karta">Karta</a></li>
+      <li><a href="#civezza">Civezza</a></li>
+      <li><a href="#kust">Kustbyar</a></li>
+      <li><a href="#berg">Bergsbyar</a></li>
+      <li><a href="#bussana-vecchia">Bussana Vecchia</a></li>
+      <li><a href="#mat">Mat</a></li>
+      <li><a href="#glass">Glass</a></li>
+      <li><a href="#vin">Vin &amp; olja</a></li>
+      <li><a href="#natur">Natur</a></li>
+      <li><a href="#marknader">Marknader</a></li>
+      <li><a href="#praktiskt">Praktiskt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ ÖVERSIKT ============ -->
+  <section id="oversikt">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">Om området</span>
+          <h2>En by byggd mot pirater</h2>
+        </div>
+        <p class="big">Civezza är en liten by i Val San Lorenzo, i Liguriens västra ”Ponente”-del, bara någon mil från Imperia. Läget är en perfekt utgångspunkt för att utforska både kust och bergsbyar i regionen.</p>
+        <p>Byn grundades av flyktingar som flydde saracenska räder längs kusten, och namnet kommer av <em>civitas vetia</em> – ”gamla staden” på latin. Två av ursprungligen fem medeltida torn från 1500-talet står fortfarande kvar, byggda som skydd mot piratanfall.</p>
+      </div>
+      <aside class="facts" aria-label="Snabbfakta">
+        <h3>Snabbfakta</h3>
+        <dl>
+          <dt>Region</dt><dd>Ligurien, provinsen Imperia</dd>
+          <dt>Del av kusten</dt><dd>Riviera di Ponente (västra Rivieran)</dd>
+          <dt>Utgångspunkt</dt><dd>Civezza, Val San Lorenzo</dd>
+          <dt>Närmaste stad</dt><dd>Imperia</dd>
+          <dt>Bästa tid</dt><dd>Vår och tidig höst – svalare och mindre turisttätt än högsommaren</dd>
+          <dt>Smaka</dt><dd>Taggiasca-olja, pesto, Rossese-vin</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ KARTA ============ -->
+  <section id="karta">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Karta</span>
+        <h2>Allt på ett ställe</h2>
+        <p>Klicka på en markör för mer info och vägbeskrivning. Filtrera på kategori med knapparna.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map-filters" data-map-filters></div>
+        <div class="map" data-map role="region" aria-label="Karta över platserna i guiden"></div>
+        <p class="map-note">Cykelledens sträckning är ungefärlig. Tidsangivelser är ungefärliga restider med bil från Civezza.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CIVEZZA ============ -->
+  <section id="civezza">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Utgångspunkten</span>
+        <h2>Direkt i Civezza – missa inte detta</h2>
+      </div>
+      <div class="grid">
+        <article class="place feature" id="civezza-by" data-cat="bas" data-lat="43.8790" data-lng="7.9530"
+                 data-name="Civezza" data-short="Liten by med medeltida försvarstorn, olivlundar och utsikt över Imperia-viken.">
+          <figure class="media" data-wiki="Civezza" data-alt="Civezza" data-label="Civezza"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Utgångspunkt</span></div>
+            <h3>Civezza</h3>
+            <p><strong>Olivolje- och vinprovning hos en lokal odlare</strong> (”Assaggiatolio”): en kort guidad promenad genom byn och ut bland sekelgamla olivlundar, med förklaring av skörd och pressning. Avslutas med provning av Taggiasca-olja tillsammans med lokalt DOC-vin och husmanskost. Bokningsbart, cirka en timme.</p>
+            <p><strong>Kvällspromenad</strong> till utsiktspunkten över Civezzas siluett och Imperia-viken.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="civezza-by">Visa på kartan</button>
+              <a class="btn" data-q="Civezza, Imperia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KUSTBYAR ============ -->
+  <section id="kust">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Längs havet</span>
+        <h2>Kustbyar – de riktiga pärlorna</h2>
+        <p>Från palmpromenader till bilfria medeltidsbyar – allt inom en kort biltur.</p>
+      </div>
+      <div class="grid">
+
+        <article class="place feature" id="cervo" data-cat="by" data-lat="43.9262" data-lng="8.1135"
+                 data-short="Bilfri medeltidsby på en kulle vid havet – en av Italiens vackraste byar.">
+          <figure class="media" data-wiki="Cervo, Liguria" data-alt="Cervo" data-label="Cervo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Kustby</span><span class="time">ca 20 min österut</span></div>
+            <h3>Cervo</h3>
+            <p>Räknas av flera reseskribenter som höjdpunkten på hela kuststräckan – officiellt klassad som en av <em>I Borghi più belli d’Italia</em>, Italiens vackraste byar.</p>
+            <p>Gå upp till <strong>Chiesa dei Corallini</strong>, byggd med pengar från korallfiskare på 1600–1700-talet, och svalka dig i pinjeskogen <strong>Ciapà</strong>. Bilfritt, kullerstensgator och havsutsikt.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="cervo">Visa på kartan</button>
+              <a class="btn" data-q="Cervo, Imperia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="bordighera" data-cat="by" data-lat="43.7806" data-lng="7.6650"
+                 data-short="Palmpromenad, gamla stan och Pallanca-trädgårdarna.">
+          <figure class="media" data-wiki="Bordighera" data-alt="Bordighera" data-label="Bordighera"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Kuststad</span></div>
+            <h3>Bordighera</h3>
+            <p>Palmklädd promenad, charmig gammal stad och de exotiska <strong>Pallanca-trädgårdarna</strong> med panoramautsikt över havet. Staden var en gång Monets musa.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="bordighera">Visa på kartan</button>
+              <a class="btn" data-q="Bordighera, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="sanremo" data-cat="by" data-lat="43.8183" data-lng="7.7738"
+                 data-name="Sanremo – La Pigna" data-mapq="La Pigna, Sanremo"
+                 data-short="Medeltida stadsdel med trappor, valv och små piazzor.">
+          <figure class="media" data-wiki="Sanremo" data-alt="Sanremo" data-label="Sanremo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Stad</span></div>
+            <h3>Sanremo – La Pigna</h3>
+            <p>Den medeltida stadsdelen som klättrar uppför kullen via trappor, valv och små piazzor. Från <strong>Giardini Regina Elena</strong> har man utsikt över skiffertak, hamn och kust.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="sanremo">Visa på kartan</button>
+              <a class="btn" data-q="La Pigna, Sanremo, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="taggia" data-cat="by" data-lat="43.8470" data-lng="7.8510"
+                 data-short="Romersk stenbro och medeltida centrum.">
+          <figure class="media" data-wiki="Taggia" data-alt="Taggia" data-label="Taggia"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Småstad</span></div>
+            <h3>Taggia</h3>
+            <p>En välbevarad stenbro av romerskt ursprung över floden Argentina, och ett medeltida centrum kring <strong>Piazza Santissima Trinità</strong>.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="taggia">Visa på kartan</button>
+              <a class="btn" data-q="Taggia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="san-lorenzo" data-cat="by" data-lat="43.8540" data-lng="7.9650"
+                 data-short="Närmaste kustort – bra start för cykelleden.">
+          <figure class="media" data-wiki="San Lorenzo al Mare" data-alt="San Lorenzo al Mare" data-label="San Lorenzo al Mare"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Kustby</span><span class="time">nedanför Civezza</span></div>
+            <h3>San Lorenzo al Mare</h3>
+            <p>Bra utgångspunkt för kustens cykelled – se <a href="#cykelled">Natur &amp; aktiviteter</a>.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="san-lorenzo">Visa på kartan</button>
+              <a class="btn" data-q="San Lorenzo al Mare, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BERGSBYAR ============ -->
+  <section id="berg">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Heldagsutflykt</span>
+        <h2>Bergsbyar i väster</h2>
+        <p>Kör mot franska gränsen (40–50 min) för regionens finaste kombination av <em>borghi</em> – medeltida byar på bergssluttningarna.</p>
+      </div>
+      <div class="grid">
+
+        <article class="place feature" id="dolceacqua" data-cat="berg" data-lat="43.8490" data-lng="7.6230"
+                 data-short="Täckta gränder upp mot Doria-slottet och bron som Monet målade.">
+          <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua med bron och slottet" data-label="Dolceacqua"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Bergsby</span><span class="time">40–50 min</span></div>
+            <h3>Dolceacqua</h3>
+            <p>Känt för sitt unika historiska centrum med nästan underjordiska, täckta gränder – <em>caruggi</em> – som klättrar upp mot <strong>Doria-slottet</strong>.</p>
+            <p>Den gamla bron över Nervia-floden målades av Claude Monet. Byn har också gett namn åt regionens mest kända rödvin – se <a href="#vin">Vin &amp; olja</a>.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="dolceacqua">Visa på kartan</button>
+              <a class="btn" data-q="Dolceacqua, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="apricale" data-cat="berg" data-lat="43.8800" data-lng="7.6600"
+                 data-short="Friluftsgalleri och Bandiera Arancione – smaka pansarole!">
+          <figure class="media" data-wiki="Apricale" data-alt="Apricale" data-label="Apricale"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Bergsby</span><span class="time">5 km från Dolceacqua</span></div>
+            <h3>Apricale</h3>
+            <p>Certifierad med <strong>Bandiera Arancione</strong> och en av Italiens vackraste byar – i praktiken ett friluftsgalleri.</p>
+            <p>Smaka de lokala <strong>pansarole</strong>: friterade jäsdegsbullar som äts med sabayonsås.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="apricale">Visa på kartan</button>
+              <a class="btn" data-q="Apricale, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="perinaldo" data-cat="berg" data-lat="43.8660" data-lng="7.6720"
+                 data-short="Astronomen Cassinis födelseby, känd för sin kronärtskocka.">
+          <figure class="media" data-wiki="Perinaldo" data-alt="Perinaldo" data-label="Perinaldo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Bergsby</span></div>
+            <h3>Perinaldo</h3>
+            <p>Mindre besökt men fascinerande – astronomen <strong>Gian Domenico Cassini</strong> föddes här 1625, och byn är känd för Perinaldo-kronärtskockan, en Slow Food-produkt.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="perinaldo">Visa på kartan</button>
+              <a class="btn" data-q="Perinaldo, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="pigna" data-cat="berg" data-lat="43.9320" data-lng="7.6620"
+                 data-short="Spa-ort med gastronomisk tradition.">
+          <figure class="media" data-wiki="Pigna, Liguria" data-alt="Pigna" data-label="Pigna"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Längre bort</span></div>
+            <h3>Pigna</h3>
+            <p>Spa-ort högre upp i Nervia-dalen, med stark gastronomisk tradition.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="pigna">Visa på kartan</button>
+              <a class="btn" data-q="Pigna, Imperia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="triora" data-cat="berg" data-lat="43.9930" data-lng="7.7640"
+                 data-short="”Häxornas by” – häxprocesserna 1587 och ett litet häxmuseum.">
+          <figure class="media" data-wiki="Triora" data-alt="Triora" data-label="Triora"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Längre bort</span></div>
+            <h3>Triora</h3>
+            <p>”Häxornas by” uppe i Argentina-dalen – känd för häxprocesserna 1587 och ett litet häxmuseum.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="triora">Visa på kartan</button>
+              <a class="btn" data-q="Triora, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUSSANA VECCHIA ============ -->
+  <section id="bussana-vecchia">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="bussana" data-cat="by" data-lat="43.8370" data-lng="7.8290"
+                 data-name="Bussana Vecchia" data-short="Övergiven medeltidsby, idag en konstnärskoloni. Bilfritt och gratis.">
+          <figure class="media" data-wiki="Bussana Vecchia" data-alt="Bussana Vecchia" data-label="Bussana Vecchia"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Udda &amp; gratis</span><span class="time">ovanför Sanremo</span></div>
+            <h3>Bussana Vecchia</h3>
+            <p>Ett spökliknande medeltida samhälle ovanför Sanremo, övergivet efter en jordbävning 1887 och sedan 1960-talet ockuperat av en internationell konstnärskoloni.</p>
+            <p>Inga bilar, inga vanliga gator – bara ateljéer, små kaféer och restauranger byggda av ruinernas eget material. Bilfritt och gratis att strosa runt i.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="bussana">Visa på kartan</button>
+              <a class="btn" data-q="Bussana Vecchia, Sanremo, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAT ============ -->
+  <section id="mat">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Mat</span>
+        <h2>Bra lokalmat framför stjärnkrogar</h2>
+        <p>Restaurangscenen handlar mer om ärlig ligurisk husmanskost än om finkrogar – men det finns undantag.</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Var äta</h3>
+          <div class="list-cards" style="grid-template-columns:1fr">
+            <div class="mini place" id="dolcedo-mat" data-cat="mat" data-lat="43.9070" data-lng="7.9500"
+                 data-name="Dolcedo – restauranger" data-mapq="Dolcedo, Imperia"
+                 data-short="Maibon, Tunù och Equilibrio – flera lokalt uppskattade ställen.">
+              <h4>Dolcedo</h4>
+              <p>Flera lokalt uppskattade ställen: <strong>Ristorante Maibon</strong> serverar enkel ligurisk mat med färsk pesto, Taggiasca-oliver och grönsaker från egen odling. <strong>Ristorante Tunù</strong> erbjuder en mer samtida gastronomisk resa. För något extra: <strong>Equilibrio</strong>, drivet av en stjärnkock.</p>
+              <a class="btn" data-q="Dolcedo, Imperia, Italy">Google Maps ↗</a>
+            </div>
+            <div class="mini place" id="imperia-hamn" data-cat="mat" data-lat="43.8790" data-lng="8.0290"
+                 data-name="Imperia – hamnpromenaden" data-mapq="Porto Maurizio, Imperia"
+                 data-short="Välj restaurang längs hamnpromenaden i Porto Maurizio eller Oneglia.">
+              <h4>Imperia – hamnpromenaden</h4>
+              <p>I Imperia (Porto Maurizio och Oneglia) är hamnpromenaden ett bra ställe att välja restaurang längs med.</p>
+              <a class="btn" data-q="Porto Maurizio, Imperia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Beställ gärna</h3>
+          <div class="menu">
+            <div class="menu-item"><div><strong>Trofie al pesto</strong><span>Korta, tvinnade pastasnoddar med Liguriens egen basilikapesto.</span></div></div>
+            <div class="menu-item"><div><strong>Coniglio alla ligure</strong><span>Kanin gryterad med oliver, pinjenötter, örter och vin.</span></div></div>
+            <div class="menu-item"><div><strong>Torta verde</strong><span>Salt paj med gröna grönsaker – en klassiker i Ligurien.</span></div></div>
+            <div class="menu-item"><div><strong>Sardenaira</strong><span>Den liguriska ”pizzan” med sardeller och oliver.</span></div></div>
+            <div class="menu-item"><div><strong>Stoccafisso</strong><span>Torkad torsk – ett arv från sjöfartens tid.</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GLASS ============ -->
+  <section id="glass">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Gelato</span>
+        <h2>Glass</h2>
+      </div>
+      <div class="list-cards">
+        <div class="mini place" id="pinotto" data-cat="mat" data-lat="43.8810" data-lng="8.0240"
+             data-name="Gelateria Pinotto" data-mapq="Gelateria Pinotto, Imperia" data-short="En institution i Porto Maurizio – ofta kö.">
+          <h4>Gelateria Pinotto</h4>
+          <p>Imperia (Porto Maurizio) – en institution, ofta kö.</p>
+          <a class="btn" data-q="Gelateria Pinotto, Imperia, Italy">Google Maps ↗</a>
+        </div>
+        <div class="mini" data-cat="mat">
+          <h4>Sharbè – da Gaetanina</h4>
+          <p>Imperia – oskyltat litet ställe, äkta ligurisk hantverksglass.</p>
+          <a class="btn" data-q="Sharbè da Gaetanina, Imperia, Italy">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="vecchia-matuzia" data-cat="mat" data-lat="43.8165" data-lng="7.7770"
+             data-name="Gelateria Vecchia Matuzia" data-mapq="Gelateria Vecchia Matuzia, Sanremo" data-short="Prisvärd hantverksglass i Sanremo.">
+          <h4>Gelateria Vecchia Matuzia</h4>
+          <p>Sanremo – prisvärd hantverksglass.</p>
+          <a class="btn" data-q="Gelateria Vecchia Matuzia, Sanremo, Italy">Google Maps ↗</a>
+        </div>
+        <div class="mini" data-cat="mat">
+          <h4>Längs kusten</h4>
+          <p>Gelateria Artigianale i Santo Stefano al Mare eller Il Negozietto del Gelato i San Bartolomeo al Mare – lokala favoriter.</p>
+          <a class="btn" data-q="Il Negozietto del Gelato, San Bartolomeo al Mare, Italy">Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIN & OLIVOLJA ============ -->
+  <section id="vin">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Vin &amp; olivolja</span>
+        <h2>Taggiasca-oliver och Rossese-vin</h2>
+        <p>Regionen är hjärtat av <strong>Taggiasca-oliven</strong> och <strong>Rossese di Dolceacqua</strong>-vinet.</p>
+      </div>
+      <div class="grid grid--2">
+
+        <article class="place" id="dolcedo" data-cat="vin" data-lat="43.9060" data-lng="7.9480"
+                 data-name="Dolcedo & Frantoio San Martino" data-mapq="Frantoio San Martino, Dolcedo"
+                 data-short="Medeltida by med gamla olivpressar och stenbro från 1292.">
+          <figure class="media" data-wiki="Dolcedo" data-alt="Dolcedo" data-label="Dolcedo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Olivolja</span><span class="time">ca 15 min</span></div>
+            <h3>Dolcedo</h3>
+            <p>Medeltida by med gamla olivpressar inbäddade under husen och en stenbro från 1292.</p>
+            <p><strong>Frantoio San Martino</strong> producerar olja av Taggiasca-oliver enligt gammal, långsam metod och tar emot besök – guidad visning bör bokas i förväg.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="dolcedo">Visa på kartan</button>
+              <a class="btn" data-q="Frantoio San Martino, Dolcedo, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" data-cat="vin">
+          <figure class="media" data-wiki="Rossese di Dolceacqua" data-alt="Vingårdar" data-label="Rossese di Dolceacqua"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Vin</span><span class="time">kring Dolceacqua</span></div>
+            <h3>Rossese di Dolceacqua</h3>
+            <p>Liguriens mest ansedda röda DOC. Mindre producenter i trakten – bokning krävs oftast:</p>
+            <ul>
+              <li><a data-q="Testalonga, Dolceacqua">Testalonga</a></li>
+              <li><a data-q="Maixei, Dolceacqua">Maixei</a></li>
+              <li><a data-q="Foresti vini, Camporosso">Foresti</a></li>
+              <li><a data-q="Cantina Muragni, Dolceacqua">Cantina Muragni</a></li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+      <div class="callout" style="margin-top:22px">
+        <span class="icon" aria-hidden="true">🍷</span>
+        <p><strong>Vad kostar en provning?</strong> Räkna med 10–25 € per person för 3–5 viner, ibland med focaccia eller ost.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NATUR ============ -->
+  <section id="natur">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Ut i det fria</span>
+        <h2>Natur &amp; aktiviteter</h2>
+      </div>
+      <div class="grid">
+
+        <article class="place feature" id="cykelled" data-cat="natur" data-lat="43.8380" data-lng="7.8800"
+                 data-name="Pista Ciclabile del Ponente Ligure" data-mapq="Pista ciclabile Parco Costiero Riviera dei Fiori"
+                 data-short="24 km plan, bilfri cykelled längs havet mellan San Lorenzo al Mare och Ospedaletti."
+                 data-route="43.8540,7.9650;43.8450,7.9250;43.8385,7.8970;43.8375,7.8800;43.8300,7.8560;43.8250,7.8300;43.8180,7.8000;43.8140,7.7800;43.8090,7.7550;43.8030,7.7300;43.7990,7.7170">
+          <figure class="media" data-wiki="Ospedaletti" data-alt="Kusten vid Ospedaletti" data-label="Cykelleden"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Cykel</span><span class="time">24 km, helt plan</span></div>
+            <h3>Pista Ciclabile del Ponente Ligure</h3>
+            <p>24 km helt plan och asfalterad gammal järnvägssträcka mellan San Lorenzo al Mare och Ospedaletti – säker, helt bilfri och lämplig för barnfamiljer. Cykeluthyrning (även elcyklar) finns längs vägen.</p>
+            <p><strong>Obs:</strong> ett avbrott mellan Riva Ligure och Arma di Taggia kräver en kort omväg via trafikerad väg.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="cykelled">Visa på kartan</button>
+              <a class="btn" data-q="Pista ciclabile, San Lorenzo al Mare, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="tunnel" data-cat="natur" data-lat="43.8600" data-lng="7.9850"
+                 data-name="San Lorenzo-tunneln" data-short="Bilfri väg genom gamla järnvägstunnlar vid havet.">
+          <figure class="media" data-label="San Lorenzo-tunneln"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Promenad / cykel</span></div>
+            <h3>San Lorenzo-tunneln</h3>
+            <p>Bilfri väg genom gamla järnvägstunnlar rakt vid havet.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="tunnel">Visa på kartan</button>
+              <a class="btn" data-q="Galleria pista ciclabile San Lorenzo al Mare">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="lecchiore" data-cat="natur" data-lat="43.9180" data-lng="7.9350"
+                 data-name="Lecchiore-dammarna" data-mapq="Laghetti di Lecchiore"
+                 data-short="Liten sjö med vattenfall och naturliga bassänger.">
+          <figure class="media" data-label="Laghetti di Lecchiore"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Kort vandring</span></div>
+            <h3>Lecchiore-dammarna</h3>
+            <p>Liten sjö med vattenfall och naturliga bassänger längs en bäck – en fin kort vandring. Vattnet kan vara kallt tidigt på hösten.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="lecchiore">Visa på kartan</button>
+              <a class="btn" data-q="Laghetti di Lecchiore, Dolcedo">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="hanbury" data-cat="natur" data-lat="43.7845" data-lng="7.5560"
+                 data-name="Giardini Botanici Hanbury" data-short="Över 5 800 växtarter på en udde med havsutsikt.">
+          <figure class="media" data-wiki="Hanbury Botanical Gardens" data-alt="Hanbury-trädgårdarna" data-label="Giardini Hanbury"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Trädgård</span><span class="time">Ventimiglia</span></div>
+            <h3>Giardini Botanici Hanbury</h3>
+            <p>Över 5 800 växtarter på en udde med havsutsikt, anlagd 1867.</p>
+            <p><strong>Öppet</strong> tis–sön 9.30–18 · fullpris 10 €</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="hanbury">Visa på kartan</button>
+              <a class="btn" data-q="Giardini Botanici Hanbury, Ventimiglia">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARKNADER ============ -->
+  <section id="marknader">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="ventimiglia" data-cat="marknad" data-lat="43.7905" data-lng="7.6085"
+                 data-name="Ventimiglias fredagsmarknad" data-mapq="Mercato del venerdì, Ventimiglia"
+                 data-short="Stor gatumarknad varje fredag – kombinera med Hanbury-trädgårdarna.">
+          <figure class="media" data-wiki="Ventimiglia" data-alt="Ventimiglia" data-label="Ventimiglia"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Marknad</span><span class="time">fredagar</span></div>
+            <h3>Ventimiglias fredagsmarknad</h3>
+            <p>En institution på Rivieran – stor gatumarknad med kläder och lokala delikatesser.</p>
+            <p>Kombinera gärna med <a href="#hanbury">Hanbury-trädgårdarna</a> samma dag.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="ventimiglia">Visa på kartan</button>
+              <a class="btn" data-q="Ventimiglia, Italy">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRAKTISKT ============ -->
+  <section id="praktiskt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Bra att veta</span>
+        <h2>Praktiskt</h2>
+      </div>
+      <div class="callout">
+        <span class="icon" aria-hidden="true">👣</span>
+        <div>
+          <p><strong>Branta gränder.</strong> De flesta bergsbyar – Apricale, Dolceacqua, Cervo och Civezza själv – har branta, kullerstensbelagda gränder och trappor.</p>
+          <p>Den som reser med barnvagn gör klokt i att spara den till kustpromenaderna och cykelleden, som är helt plana, och istället använda bärsele i bergsbyarna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Öppettider, priser och bokningsregler ändras – kontrollera alltid aktuell information innan besök.</p>
+    <p>Bilder hämtas från Wikipedia/Wikimedia Commons; klicka på ”Foto”-länken i varje bild för fotograf och licens. Kartdata © OpenStreetMap-bidragsgivare, kartstil © CARTO.</p>
+    <p><button class="theme-toggle" type="button" data-theme-toggle>Växla ljust/mörkt tema</button></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/guide.js"></script>
+</body>
+</html>
