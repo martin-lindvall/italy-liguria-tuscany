@@ -7,6 +7,7 @@ En statisk reseguide (HTML/CSS/JS, inget byggsteg) för GitHub Pages.
 | `index.html` | Startsida med resmål och översiktskarta |
 | `liguria.html` | Guide: Civezza & Ponente Liguria |
 | `toscana.html` | Guide: Loro Ciuffenna & Valdarno |
+| `pisa-civezza.html` | Resväg: Pisa → Civezza med bil |
 | `assets/style.css` | Gemensam stil (ljust/mörkt tema) |
 | `assets/guide.js` | Bilder, karta, navigering |
 | `content/*.md` | Källtexterna i Markdown |

@@ -23,6 +23,9 @@
   --cat-natur: #2e8060;
   --cat-marknad: #8a4f9e;
   --cat-kultur: #a23b5a;
+  --cat-vag: #4a5a6a;
+  --cat-kust: #1f8bb0;
+  --cat-rast: #b8860b;
 
   --radius: 14px;
   --maxw: 1120px;
@@ -51,6 +54,9 @@
     --cat-natur: #5cbf94;
     --cat-marknad: #bf8ad1;
     --cat-kultur: #e0839f;
+    --cat-vag: #9fb0c2;
+    --cat-kust: #5fc3e4;
+    --cat-rast: #e0b44a;
     color-scheme: dark;
   }
 }
@@ -73,6 +79,9 @@
   --cat-natur: #5cbf94;
   --cat-marknad: #bf8ad1;
   --cat-kultur: #e0839f;
+  --cat-vag: #9fb0c2;
+  --cat-kust: #5fc3e4;
+  --cat-rast: #e0b44a;
   color-scheme: dark;
 }
 
@@ -117,6 +126,16 @@ p { margin: 0 0 1em; }
 .topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; height: 60px; }
 .brand { font-family: var(--font-head); font-weight: 600; font-size: 1.1rem; color: #fff; text-decoration: none; }
 .brand:hover { color: #fff; opacity: .85; }
+.brand { white-space: nowrap; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.topnav { flex-shrink: 0; }
+.brand-short { display: none; }
+@media (max-width: 440px) {
+  .brand { font-size: .9rem; }
+  .brand-full { display: none; }
+  .brand-short { display: inline; }
+  .topnav { gap: 3px; }
+  .topnav a { padding: 5px 8px; font-size: .78rem; }
+}
 .topnav { display: flex; gap: 4px; }
 .topnav a {
   color: #fff; text-decoration: none; font-size: .9rem; font-weight: 500;
@@ -174,6 +193,9 @@ p { margin: 0 0 1em; }
 [data-cat="natur"]   { --c: var(--cat-natur); }
 [data-cat="marknad"] { --c: var(--cat-marknad); }
 [data-cat="kultur"]  { --c: var(--cat-kultur); }
+[data-cat="vag"]     { --c: var(--cat-vag); }
+[data-cat="kust"]    { --c: var(--cat-kust); }
+[data-cat="rast"]    { --c: var(--cat-rast); }
 
 /* ---------- Sektionsnavigering ---------- */
 .sectionnav {
@@ -345,6 +367,35 @@ section + section { border-top: 1px solid var(--line); }
 .two-col { display: grid; gap: 28px; }
 @media (min-width: 880px) { .two-col { grid-template-columns: 1fr 1fr; } }
 
+/* ---------- Etappsteg (resvägar) ---------- */
+.steps { list-style: none; margin: 0; padding: 0; position: relative; }
+.steps::before {
+  content: ""; position: absolute; left: 15px; top: 16px; bottom: 16px;
+  width: 3px; background: var(--line); border-radius: 3px;
+}
+.steps li { position: relative; padding: 0 0 22px 50px; }
+.steps li:last-child { padding-bottom: 0; }
+.steps li::before {
+  content: attr(data-n); position: absolute; left: 0; top: 0;
+  width: 33px; height: 33px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: .85rem; font-weight: 700; color: #fff;
+  background: var(--c, var(--accent)); border: 3px solid var(--bg);
+}
+.steps h4 { font-family: var(--font-head); font-size: 1.15rem; margin: 3px 0 4px; }
+.steps p { margin: 0; color: var(--ink-soft); }
+.steps .road {
+  display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+  padding: 2px 8px; border-radius: 5px; margin-left: 6px; vertical-align: 2px;
+  background: var(--c, var(--accent)); color: #fff;
+}
+.map-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; padding: 10px 12px 0; font-size: .82rem; color: var(--ink-soft); }
+.map-legend span::before {
+  content: ""; display: inline-block; width: 26px; height: 0; margin-right: 8px; vertical-align: 4px;
+  border-top: 5px solid var(--c);
+}
+.map-legend .dashed::before { border-top-style: dotted; }
+
 /* ---------- Startsida ---------- */
 .dest-grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 380px), 1fr)); }
 .dest {
@@ -369,6 +420,7 @@ section + section { border-top: 1px solid var(--line); }
   background: rgba(255,255,255,.9); color: #2b2521; padding: 5px 10px; border-radius: 999px;
 }
 .dest.soon { cursor: default; }
+.dest--small { min-height: 280px; }
 .dest.soon .media { filter: saturate(.7); }
 .dest .credit { bottom: auto; top: 16px; right: 16px; }
 

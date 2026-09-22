@@ -20,6 +20,9 @@
     vin:     "Vin & olivolja",
     natur:   "Natur & aktiviteter",
     marknad: "Marknader",
+    vag:     "Motorväg",
+    kust:    "Kustvägen SS1",
+    rast:    "Rast & avstickare",
   };
 
   /* ---------- Hjälpfunktioner ---------- */
@@ -191,10 +194,12 @@
   const L = window.L;
 
   const map = L.map(mapEl, { scrollWheelZoom: false, tap: true });
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
+  // OpenStreetMaps kartbilder kräver en Referer-header. Sidan skickar annars
+  // ingen referrer, så här skickas bara domännamnet (inte hela adressen).
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
-    subdomains: "abcd",
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>',
+    referrerPolicy: "strict-origin",
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>',
   }).addTo(map);
   map.on("click", () => map.scrollWheelZoom.enable());
   map.on("mouseout", () => map.scrollWheelZoom.disable());
@@ -230,16 +235,20 @@
       '<a href="' + gmaps(q) + '" target="_blank" rel="noopener noreferrer">Google Maps ↗</a>' +
       "</div>";
 
-    const marker = L.marker([lat, lng], { icon: icon, title: name, riseOnHover: true }).bindPopup(html);
-    (layers[cat] = layers[cat] || L.layerGroup().addTo(map)).addLayer(marker);
-    if (el.id) markersById[el.id] = { marker: marker, cat: cat };
-    bounds.push([lat, lng]);
+    layers[cat] = layers[cat] || L.layerGroup().addTo(map);
+    if (!el.hasAttribute("data-nomarker")) {
+      const marker = L.marker([lat, lng], { icon: icon, title: name, riseOnHover: true }).bindPopup(html);
+      layers[cat].addLayer(marker);
+      if (el.id) markersById[el.id] = { marker: marker, cat: cat };
+      bounds.push([lat, lng]);
+    }
 
     const route = el.getAttribute("data-route");
     if (route) {
       const pts = route.split(";").map((p) => p.split(",").map(Number));
       const color = getComputedStyle(el).getPropertyValue("--c").trim() || "#2e8060";
-      L.polyline(pts, { color: color, weight: 5, opacity: .85, dashArray: "2 8", lineCap: "round" })
+      const solid = el.getAttribute("data-route-style") === "solid";
+      L.polyline(pts, { color: color, weight: solid ? 6 : 5, opacity: .85, dashArray: solid ? null : "2 8", lineCap: "round" })
         .bindPopup(html).addTo(layers[cat]);
       pts.forEach((p) => bounds.push(p));
     }
