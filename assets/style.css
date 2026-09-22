@@ -22,6 +22,7 @@
   --cat-vin: #6b7d2a;
   --cat-natur: #2e8060;
   --cat-marknad: #8a4f9e;
+  --cat-kultur: #a23b5a;
 
   --radius: 14px;
   --maxw: 1120px;
@@ -49,6 +50,7 @@
     --cat-vin: #a9bb5a;
     --cat-natur: #5cbf94;
     --cat-marknad: #bf8ad1;
+    --cat-kultur: #e0839f;
     color-scheme: dark;
   }
 }
@@ -70,6 +72,7 @@
   --cat-vin: #a9bb5a;
   --cat-natur: #5cbf94;
   --cat-marknad: #bf8ad1;
+  --cat-kultur: #e0839f;
   color-scheme: dark;
 }
 
@@ -170,6 +173,7 @@ p { margin: 0 0 1em; }
 [data-cat="vin"]     { --c: var(--cat-vin); }
 [data-cat="natur"]   { --c: var(--cat-natur); }
 [data-cat="marknad"] { --c: var(--cat-marknad); }
+[data-cat="kultur"]  { --c: var(--cat-kultur); }
 
 /* ---------- Sektionsnavigering ---------- */
 .sectionnav {

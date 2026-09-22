@@ -13,7 +13,8 @@
 
   const CATS = {
     bas:     "Utgångspunkt",
-    by:      "Kustbyar & städer",
+    by:      "Byar & städer",
+    kultur:  "Kyrkor, kloster & museer",
     berg:    "Bergsbyar",
     mat:     "Mat & glass",
     vin:     "Vin & olivolja",

@@ -6,6 +6,7 @@ En statisk reseguide (HTML/CSS/JS, inget byggsteg) för GitHub Pages.
 | --- | --- |
 | `index.html` | Startsida med resmål och översiktskarta |
 | `liguria.html` | Guide: Civezza & Ponente Liguria |
+| `toscana.html` | Guide: Loro Ciuffenna & Valdarno |
 | `assets/style.css` | Gemensam stil (ljust/mörkt tema) |
 | `assets/guide.js` | Bilder, karta, navigering |
 | `content/*.md` | Källtexterna i Markdown |
@@ -13,7 +14,7 @@ En statisk reseguide (HTML/CSS/JS, inget byggsteg) för GitHub Pages.
 ## Publicera
 
 1. **Settings → Pages** i repot.
-2. *Source*: **Deploy from a branch**, välj grenen och mappen `/ (root)`, spara.
+2. *Source*: **Deploy from a branch**, välj grenen `main` och mappen `/ (root)`, spara.
 3. Efter någon minut ligger sajten på `https://<användarnamn>.github.io/italy-liguria-tuscany/`.
 
 GitHub Pages i gratisversionen kräver att repot är publikt.
