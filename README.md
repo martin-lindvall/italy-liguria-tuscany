@@ -35,3 +35,8 @@ GitHub Pages i gratisversionen kräver att repot är publikt.
 - `robots.txt` fungerar bara i domänens rot (t.ex. med egen domän eller en `<användarnamn>.github.io`-sajt),
   men skadar inte här.
 - Sidan är inte hemlig: alla med länken kan läsa den, och ett publikt repo syns på GitHub.
+
+## Uppdatera CSS/JS
+
+Öka versionsnumret (`?v=3` → `?v=4`) i alla HTML-filer när `assets/style.css` eller
+`assets/guide.js` ändras, så att besökarnas webbläsare hämtar den nya versionen direkt.
