@@ -196,6 +196,7 @@ p { margin: 0 0 1em; }
 [data-cat="vag"]     { --c: var(--cat-vag); }
 [data-cat="kust"]    { --c: var(--cat-kust); }
 [data-cat="rast"]    { --c: var(--cat-rast); }
+[data-cat="trafik"]  { --c: var(--cat-vag); }
 
 /* ---------- Sektionsnavigering ---------- */
 .sectionnav {
@@ -385,6 +386,14 @@ section + section { border-top: 1px solid var(--line); }
 .w-links a:hover { text-decoration: underline; }
 .also { font-size: .9rem; color: var(--ink-soft); margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--line); }
 .area-head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-bottom: 4px; }
+
+/* ---------- Gångavstånd ---------- */
+.walk { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.walk li { display: grid; grid-template-columns: minmax(120px, 1.1fr) 2fr 5.5em; gap: 12px; align-items: center; font-size: .95rem; }
+.walk .bar { height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.walk .bar span { display: block; height: 100%; width: var(--w); border-radius: inherit; background: var(--c, var(--accent)); }
+.walk .min { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink-soft); font-size: .88rem; white-space: nowrap; }
+@media (max-width: 520px) { .walk li { grid-template-columns: 1fr auto; } .walk .bar { grid-column: 1 / -1; order: 3; } }
 
 /* ---------- Etappsteg (resvägar) ---------- */
 .steps { list-style: none; margin: 0; padding: 0; position: relative; }

@@ -10,6 +10,7 @@ En statisk reseguide (HTML/CSS/JS, inget byggsteg) för GitHub Pages.
 | `pisa-civezza.html` | Resväg: Pisa → Civezza med bil |
 | `vingardar-liguria.html` | Vingårdar i västra Ligurien |
 | `vingardar-toscana.html` | Vingårdar i Valdarno |
+| `florens.html` | Dagsutflykt: Florens |
 | `assets/style.css` | Gemensam stil (ljust/mörkt tema) |
 | `assets/guide.js` | Bilder, karta, navigering |
 | `content/*.md` | Källtexterna i Markdown |
@@ -40,5 +41,5 @@ GitHub Pages i gratisversionen kräver att repot är publikt.
 
 ## Uppdatera CSS/JS
 
-Öka versionsnumret (`?v=4` → `?v=5`) i alla HTML-filer när `assets/style.css` eller
+Öka versionsnumret (`?v=5` → `?v=6`) i alla HTML-filer när `assets/style.css` eller
 `assets/guide.js` ändras, så att besökarnas webbläsare hämtar den nya versionen direkt.

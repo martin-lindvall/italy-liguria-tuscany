@@ -23,6 +23,7 @@
     vag:     "Motorväg",
     kust:    "Kustvägen SS1",
     rast:    "Rast & avstickare",
+    trafik:  "Parkering & spårvagn",
   };
 
   /* ---------- Hjälpfunktioner ---------- */
@@ -260,13 +261,15 @@
   // Filterknappar
   const filters = document.querySelector("[data-map-filters]");
   if (filters) {
+    let labels = {};
+    try { labels = JSON.parse(filters.getAttribute("data-labels") || "{}"); } catch (e) { /* ignorera */ }
     Object.keys(CATS).forEach((cat) => {
       if (!layers[cat]) return;
       const b = document.createElement("button");
       b.type = "button";
       b.setAttribute("data-cat", cat);
       b.setAttribute("aria-pressed", "true");
-      b.textContent = CATS[cat];
+      b.textContent = labels[cat] || CATS[cat];
       b.addEventListener("click", () => {
         const on = b.getAttribute("aria-pressed") === "true";
         b.setAttribute("aria-pressed", on ? "false" : "true");

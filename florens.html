@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florens – reseguide</title>
+  <meta name="description" content="Dagsutflykt till Florens från Valdarno: bil eller tåg, gångavstånd, sevärdheter, Oltrarno, mat och glass.">
+  <!-- Håll sidan borta från sökmotorer och arkiv -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#c2562b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23c2562b'/%3E%3Cpath d='M18 64c14-10 22-10 32 0s18 10 32 0' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/style.css?v=5">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short" aria-label="Start">⌂</span></a>
+    <nav class="topnav" aria-label="Resmål">
+      <a href="liguria.html">Liguria</a>
+      <a href="toscana.html" aria-current="page">Toscana</a>
+      <a href="./#vingardar">Vin</a>
+      <a href="./#resvagar">Resvägar</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <figure class="media" data-wiki="Florence" data-alt="Florens"></figure>
+  <div class="wrap">
+    <span class="eyebrow">Dagsutflykt · Toscana</span>
+    <h1>Florens</h1>
+    <p class="lede">Ungefär 53 km från Loro Ciuffenna – en snabb resa oavsett om du väljer bil eller tåg. Nästan allt ligger på promenadavstånd från centralstationen.</p>
+    <div class="chips">
+      <span class="chip">🚗 Ca 43 min med bil</span>
+      <span class="chip">🚆 30–55 min med tåg</span>
+      <span class="chip">🚫 Kör inte in i ZTL</span>
+    </div>
+  </div>
+</div>
+
+<nav class="sectionnav" aria-label="Innehåll">
+  <div class="wrap">
+    <ul>
+      <li><a href="#oversikt">Översikt</a></li>
+      <li><a href="#dit">Ta sig dit</a></li>
+      <li><a href="#gangavstand">Gångavstånd</a></li>
+      <li><a href="#karta">Karta</a></li>
+      <li><a href="#sevardheter">Sevärdheter</a></li>
+      <li><a href="#oltrarno">Oltrarno</a></li>
+      <li><a href="#mat">Mat &amp; fika</a></li>
+      <li><a href="#glass">Glass</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ ÖVERSIKT ============ -->
+  <section id="oversikt">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">Sammanfattat</span>
+          <h2>Tåg eller bil – båda funkar</h2>
+        </div>
+        <p class="big"><strong>Tåg från San Giovanni Valdarno</strong> är enklast om du bara ska in till Florens och tillbaka samma dag.</p>
+        <p><strong>Bil + Villa Costanza</strong> är nästan lika smidigt och ger flexibilitet om du vill stanna någonstans på vägen. Kör aldrig in i den historiska stadskärnan – den är en kameraövervakad ZTL-zon.</p>
+      </div>
+      <aside class="facts" aria-label="Snabbfakta">
+        <h3>Snabbfakta</h3>
+        <dl>
+          <dt>Avstånd</dt><dd>Ca 53 km från Loro Ciuffenna</dd>
+          <dt>Bil</dt><dd>Ca 43 min via autostradan, tull ca 2,90 €</dd>
+          <dt>Tåg</dt><dd>30–55 min från San Giovanni Valdarno eller Figline Valdarno</dd>
+          <dt>Ankomst</dt><dd>Firenze Santa Maria Novella, mitt i centrum</dd>
+          <dt>Boka i förväg</dt><dd>Uffizierna, Accademia och Duomos kupol</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TA SIG DIT ============ -->
+  <section id="dit">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Hur man bäst tar sig dit</span>
+        <h2>Två smidiga alternativ</h2>
+      </div>
+
+      <div class="two-col">
+        <div class="facts">
+          <h3>🚆 Tåg</h3>
+          <ol class="steps">
+            <li data-n="1" data-cat="bas">
+              <h4>Kör till stationen</h4>
+              <p>Loro Ciuffenna saknar egen station. Närmast är <strong>San Giovanni Valdarno</strong>, ca 15–20 min med bil, på huvudlinjen Florens–Arezzo–Rom. Alternativ: <strong>Figline Valdarno</strong>, med liknande restid.</p>
+            </li>
+            <li data-n="2" data-cat="bas">
+              <h4>Regiontåg till Florens</h4>
+              <p>Flera avgångar i timmen dagtid, 30–55 min beroende på tågtyp.</p>
+            </li>
+            <li data-n="3" data-cat="bas">
+              <h4>Framme vid Santa Maria Novella</h4>
+              <p>Mitt i centrum – gå direkt ut i staden.</p>
+            </li>
+          </ol>
+          <p class="also">Att parkera vid stationen och ta tåget är ofta det mest avslappnade valet för en heldagsutflykt – du slipper både ZTL och den sista biten med spårvagn.</p>
+        </div>
+
+        <div class="facts">
+          <h3>🚗 Bil + park &amp; ride</h3>
+          <ol class="steps">
+            <li data-n="1" data-cat="trafik">
+              <h4>A1 till Villa Costanza</h4>
+              <p>Ca 43 min, tull ca 2,90 €. <strong>Parcheggio Villa Costanza</strong> ligger direkt vid A1, mellan avfarterna Scandicci och Impruneta, och nås endast från motorvägen via en egen tullstation.</p>
+            </li>
+            <li data-n="2" data-cat="trafik">
+              <h4>Parkera</h4>
+              <p>Öppet dygnet runt, betalning sker automatiskt.</p>
+            </li>
+            <li data-n="3" data-cat="trafik">
+              <h4>Spårvagn T1 in till stan</h4>
+              <p>Hållplatsen ligger några steg bort. T1 går raka vägen till Santa Maria Novella på ca 22 min. Biljett (90 min, ca 1,70 €) köps separat i automat.</p>
+            </li>
+          </ol>
+          <p class="also"><a data-q="Parcheggio Villa Costanza, Scandicci">Villa Costanza i Google Maps ↗</a></p>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:24px">
+        <span class="icon" aria-hidden="true">🚫</span>
+        <p><strong>ZTL – Zona a Traffico Limitato.</strong> Florens historiska centrum är kameraövervakat och förbjudet för obehöriga fordon, med kännbara böter om du kör in. Undvik att köra ända in – använd park &amp; ride eller tåg.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GÅNGAVSTÅND ============ -->
+  <section id="gangavstand">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Från Santa Maria Novella</span>
+        <h2>Allt nära stationen</h2>
+        <p>Stationen ligger mitt i den historiska stadskärnan – det mesta nås till fots på en kvart.</p>
+      </div>
+      <div class="facts">
+        <ul class="walk">
+          <li data-cat="kultur"><span>Duomo</span><span class="bar"><span style="--w:28%"></span></span><span class="min">9–10 min</span></li>
+          <li data-cat="kultur"><span>Ponte Vecchio</span><span class="bar"><span style="--w:29%"></span></span><span class="min">ca 10 min</span></li>
+          <li data-cat="kultur"><span>Piazza della Signoria</span><span class="bar"><span style="--w:29%"></span></span><span class="min">ca 10 min</span></li>
+          <li data-cat="kultur"><span>Uffizierna</span><span class="bar"><span style="--w:37%"></span></span><span class="min">12–14 min</span></li>
+          <li data-cat="kultur"><span>Palazzo Pitti / Boboli</span><span class="bar"><span style="--w:37%"></span></span><span class="min">ca 13 min</span></li>
+          <li data-cat="by"><span>Oltrarno (Santo Spirito)</span><span class="bar"><span style="--w:43%"></span></span><span class="min">ca 15 min</span></li>
+          <li data-cat="natur"><span>Piazzale Michelangelo</span><span class="bar"><span style="--w:94%"></span></span><span class="min">30–35 min</span></li>
+        </ul>
+      </div>
+      <div class="callout" style="margin-top:22px">
+        <span class="icon" aria-hidden="true">⛰</span>
+        <p><strong>Piazzale Michelangelo</strong> ligger på höjden på andra sidan floden, och de sista bitarna är uppförsbacke. Ta hellre <strong>buss 12 eller 13</strong> direkt från stationen – eller gå dit när du ändå är vid Ponte Vecchio: från Piazza San Niccolò är det bara ca 10 minuters brant uppgång.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KARTA ============ -->
+  <section id="karta">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Karta</span>
+        <h2>Florens på en karta</h2>
+        <p>Klicka på en markör för mer info. Spårvagnslinjens sträckning är ungefärlig.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map-filters" data-map-filters data-labels='{"bas":"Stationen","kultur":"Sevärdheter","by":"Oltrarno"}'></div>
+        <div class="map" data-map role="region" aria-label="Karta över Florens"></div>
+      </div>
+      <div hidden>
+        <div class="place" data-cat="bas" data-lat="43.7765" data-lng="11.2480"
+             data-name="Firenze Santa Maria Novella" data-mapq="Firenze Santa Maria Novella"
+             data-short="Centralstationen – tågen från Valdarno och spårvagn T1 kommer hit."></div>
+        <div class="place" data-cat="trafik" data-lat="43.7473" data-lng="11.1873"
+             data-name="Parcheggio Villa Costanza" data-mapq="Parcheggio Villa Costanza, Scandicci"
+             data-short="Park & ride direkt vid A1 – spårvagn T1 till centrum på ca 22 min."
+             data-route="43.7473,11.1873;43.7545,11.1935;43.7640,11.2100;43.7700,11.2250;43.7740,11.2390;43.7765,11.2480"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SEVÄRDHETER ============ -->
+  <section id="sevardheter">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Missa inte</span>
+        <h2>Sevärdheter</h2>
+      </div>
+      <div class="grid">
+
+        <article class="place feature" id="duomo" data-cat="kultur" data-lat="43.7731" data-lng="11.2560"
+                 data-name="Il Duomo" data-mapq="Cattedrale di Santa Maria del Fiore"
+                 data-short="Gratis att gå in i katedralen – boka kupolbiljett i förväg.">
+          <figure class="media" data-wiki="Florence Cathedral" data-alt="Domkyrkan i Florens" data-label="Il Duomo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Katedral</span><span class="time">9–10 min från stationen</span></div>
+            <h3>Il Duomo – Santa Maria del Fiore</h3>
+            <p>Gratis att gå in i själva katedralen. Kupolen har <strong>463 trappsteg utan hiss</strong> – boka kupolbiljett i förväg om du vill upp.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="duomo">Visa på kartan</button>
+              <a class="btn" data-q="Cattedrale di Santa Maria del Fiore, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="signoria" data-cat="kultur" data-lat="43.7696" data-lng="11.2558"
+                 data-name="Piazza della Signoria" data-short="Stadens historiska maktcentrum med Palazzo Vecchio.">
+          <figure class="media" data-wiki="Piazza della Signoria" data-alt="Piazza della Signoria" data-label="Piazza della Signoria"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Piazza</span><span class="time">ca 10 min</span></div>
+            <h3>Piazza della Signoria &amp; Palazzo Vecchio</h3>
+            <p>Stadens historiska maktcentrum – ett bra nav mellan Duomo och Uffizierna.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="signoria">Visa på kartan</button>
+              <a class="btn" data-q="Piazza della Signoria, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="ponte-vecchio" data-cat="kultur" data-lat="43.7680" data-lng="11.2531"
+                 data-name="Ponte Vecchio" data-short="Vackrast från en annan bro – fortsätt sedan in i Oltrarno.">
+          <figure class="media" data-wiki="Ponte Vecchio" data-alt="Ponte Vecchio" data-label="Ponte Vecchio"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Bro</span><span class="time">ca 10 min</span></div>
+            <h3>Ponte Vecchio</h3>
+            <p>Vackrast betraktad från en annan bro längs Arno. Gå sedan vidare in i <a href="#oltrarno">Oltrarno</a> i stället för att vända tillbaka.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="ponte-vecchio">Visa på kartan</button>
+              <a class="btn" data-q="Ponte Vecchio, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="uffizi" data-cat="kultur" data-lat="43.7678" data-lng="11.2553"
+                 data-name="Uffizierna" data-mapq="Galleria degli Uffizi"
+                 data-short="Boka biljett i förväg – annars långa köer.">
+          <figure class="media" data-wiki="Uffizi" data-alt="Uffizierna" data-label="Uffizierna"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Museum</span><span class="time">12–14 min</span></div>
+            <h3>Uffizierna</h3>
+            <p><span class="badge" data-cat="kultur">Boka i förväg</span> Köerna är annars långa.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="uffizi">Visa på kartan</button>
+              <a class="btn" data-q="Galleria degli Uffizi, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="accademia" data-cat="kultur" data-lat="43.7768" data-lng="11.2586"
+                 data-name="Galleria dell'Accademia" data-short="Här står Davidstatyn – boka i förväg.">
+          <figure class="media" data-wiki="Galleria dell'Accademia" data-alt="Galleria dell'Accademia" data-label="Accademia"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Museum</span></div>
+            <h3>Accademia</h3>
+            <p>Här står Michelangelos <strong>David</strong>. <span class="badge" data-cat="kultur">Boka i förväg</span></p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="accademia">Visa på kartan</button>
+              <a class="btn" data-q="Galleria dell'Accademia, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="boboli" data-cat="kultur" data-lat="43.7651" data-lng="11.2500"
+                 data-name="Boboliträdgårdarna" data-mapq="Giardino di Boboli"
+                 data-short="Grön oas med skulpturer och utsikt bakom Palazzo Pitti.">
+          <figure class="media" data-wiki="Boboli Gardens" data-alt="Boboliträdgårdarna" data-label="Boboli"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Trädgård</span><span class="time">ca 13 min</span></div>
+            <h3>Boboliträdgårdarna</h3>
+            <p>Bakom Palazzo Pitti – en grön oas med skulpturer och utsikt.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="boboli">Visa på kartan</button>
+              <a class="btn" data-q="Giardino di Boboli, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="michelangelo" data-cat="kultur" data-lat="43.7629" data-lng="11.2650"
+                 data-name="Piazzale Michelangelo" data-short="Klassisk solnedgångsutsikt – rosträdgården intill är lugnare.">
+          <figure class="media" data-wiki="Piazzale Michelangelo" data-alt="Utsikt från Piazzale Michelangelo" data-label="Piazzale Michelangelo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Utsikt</span><span class="time">buss 12/13</span></div>
+            <h3>Piazzale Michelangelo &amp; Giardino delle Rose</h3>
+            <p>Klassisk solnedgångsutsikt över staden. Rosträdgården strax nedanför är lugnare än själva piazzalen.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="michelangelo">Visa på kartan</button>
+              <a class="btn" data-q="Giardino delle Rose, Firenze">Rosträdgården ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="san-miniato" data-cat="kultur" data-lat="43.7594" data-lng="11.2650"
+                 data-name="San Miniato al Monte" data-short="En av Florens finaste romanska kyrkor – lugnare än Duomo.">
+          <figure class="media" data-wiki="San Miniato al Monte" data-alt="San Miniato al Monte" data-label="San Miniato al Monte"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Kyrka</span><span class="time">ovanför Piazzale Michelangelo</span></div>
+            <h3>San Miniato al Monte</h3>
+            <p>En av Florens finaste romanska kyrkor, uppe på höjden – ofta betydligt lugnare än Duomo.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="san-miniato">Visa på kartan</button>
+              <a class="btn" data-q="San Miniato al Monte, Firenze">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <h3 style="margin-top:36px">Mindre kända pärlor</h3>
+      <div class="list-cards">
+        <div class="mini place" id="ognissanti" data-cat="kultur" data-lat="43.7722" data-lng="11.2448"
+             data-name="San Salvatore in Ognissanti" data-mapq="Chiesa di Ognissanti, Firenze"
+             data-short="Tidigt Giotto-krucifix, nästan alltid folktomt.">
+          <h4>San Salvatore in Ognissanti</h4>
+          <p>Kyrka med ett tidigt Giotto-krucifix från ca 1310 – nästan alltid folktom.</p>
+          <a class="btn" data-q="Chiesa di Ognissanti, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="novecento" data-cat="kultur" data-lat="43.7735" data-lng="11.2486"
+             data-name="Museo Novecento" data-mapq="Museo Novecento, Firenze"
+             data-short="1900-talskonst vid Piazza Santa Maria Novella.">
+          <h4>Museo Novecento</h4>
+          <p>1900-talskonst vid Piazza Santa Maria Novella, alldeles vid stationen.</p>
+          <a class="btn" data-q="Museo Novecento, Firenze">Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OLTRARNO ============ -->
+  <section id="oltrarno">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="santo-spirito" data-cat="by" data-lat="43.7665" data-lng="11.2480"
+                 data-name="Piazza Santo Spirito" data-mapq="Piazza Santo Spirito, Firenze"
+                 data-short="Genuin, lokal känsla på andra sidan Arno.">
+          <figure class="media" data-wiki="Oltrarno" data-alt="Oltrarno" data-label="Oltrarno"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Den lugnare sidan</span><span class="time">ca 15 min</span></div>
+            <h3>Oltrarno</h3>
+            <p>Gå över floden för en annan rytm. Kvarteren kring <strong>Piazza Santo Spirito</strong> och den undangömda <strong>Piazza della Passera</strong> har kvar en genuin, lokal känsla.</p>
+            <p><strong>Torre di San Niccolò</strong> – öppen sommartid – går att klättra upp i för en av de bästa utsiktsplatserna över centrum.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="santo-spirito">Visa på kartan</button>
+              <a class="btn" data-q="Piazza della Passera, Firenze">Piazza della Passera ↗</a>
+              <a class="btn" data-q="Torre San Niccolò, Firenze">Torre di San Niccolò ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div hidden>
+        <div class="place" data-cat="by" data-lat="43.7667" data-lng="11.2505" data-name="Piazza della Passera" data-short="Undangömd piazza i Oltrarno."></div>
+        <div class="place" data-cat="by" data-lat="43.7628" data-lng="11.2627" data-name="Torre di San Niccolò" data-mapq="Torre San Niccolò, Firenze" data-short="Utsiktstorn, öppet sommartid."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAT ============ -->
+  <section id="mat">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Mat &amp; fika</span>
+        <h2>Lampredotto, panini och trattorior</h2>
+      </div>
+      <div class="list-cards">
+        <div class="mini place" id="lampredotto" data-cat="mat" data-lat="43.7700" data-lng="11.2640"
+             data-name="Lampredotto – Sergio Pollini" data-mapq="Lampredotto Sergio Pollini, Via dei Macci, Firenze"
+             data-short="Florens klassiska gatumat – historisk kiosk.">
+          <h4>Lampredotto</h4>
+          <p>Florens klassiska gatumatsrätt – kokt komage i bröd. Sergio Pollini-kiosken på Via dei Macci är en historisk institution.</p>
+          <a class="btn" data-q="Lampredotto Sergio Pollini, Via dei Macci, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="gustapanino" data-cat="mat" data-lat="43.7668" data-lng="11.2474"
+             data-name="Gustapanino" data-mapq="Gustapanino, Piazza Santo Spirito, Firenze"
+             data-short="Stående vinbar med enkla, uppskattade smörgåsar.">
+          <h4>Gustapanino</h4>
+          <p>Piazza Santo Spirito – stående vinbar med enkla, mycket uppskattade smörgåsar.</p>
+          <a class="btn" data-q="Gustapanino, Piazza Santo Spirito, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="quattro-leoni" data-cat="mat" data-lat="43.7666" data-lng="11.2508"
+             data-name="Trattoria 4 Leoni" data-mapq="Trattoria 4 Leoni, Firenze"
+             data-short="Klassisk toskansk mat vid Piazza della Passera.">
+          <h4>Trattoria 4 Leoni</h4>
+          <p>Vid Piazza della Passera – klassisk toskansk mat i Oltrarno.</p>
+          <a class="btn" data-q="Trattoria 4 Leoni, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="sant-ambrogio" data-cat="mat" data-lat="43.7697" data-lng="11.2656"
+             data-name="Mercato di Sant'Ambrogio" data-short="Lokal marknad, mindre turistig än San Lorenzo.">
+          <h4>Mercato di Sant’Ambrogio</h4>
+          <p>Lokal marknad, mindre turistig än San Lorenzo-marknaden.</p>
+          <a class="btn" data-q="Mercato di Sant'Ambrogio, Firenze">Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GLASS ============ -->
+  <section id="glass">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Gelato</span>
+        <h2>Glass</h2>
+      </div>
+      <div class="callout" style="margin-bottom:22px">
+        <span class="icon" aria-hidden="true">🍨</span>
+        <p><strong>Så hittar du bra glass:</strong> undvik ställen med neonfärgade, tornhöga glasshögar i skyltfönstret – det är sällan bästa kvaliteten. Leta i stället efter glass som förvaras i täckta stålbehållare.</p>
+      </div>
+      <div class="list-cards">
+        <div class="mini place" id="carapina" data-cat="mat" data-lat="43.7745" data-lng="11.2725"
+             data-name="Carapina" data-mapq="Carapina, Piazza Oberdan, Firenze" data-short="Hantverksglass vid Piazza Guglielmo Oberdan.">
+          <h4>Carapina</h4>
+          <p>Piazza Guglielmo Oberdan.</p>
+          <a class="btn" data-q="Carapina, Piazza Oberdan, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="grom" data-cat="mat" data-lat="43.7725" data-lng="11.2566"
+             data-name="Grom" data-mapq="Grom, Via del Campanile, Firenze" data-short="Glass nära Duomo.">
+          <h4>Grom</h4>
+          <p>Nära Duomo.</p>
+          <a class="btn" data-q="Grom, Via del Campanile, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place" id="cantina-gelato" data-cat="mat" data-lat="43.7672" data-lng="11.2540"
+             data-name="La Cantina del Gelato" data-mapq="Cantina del Gelato, Via dei Bardi, Firenze" data-short="Utsikt över Ponte Vecchio.">
+          <h4>Cantina del Gelato</h4>
+          <p>Via dei Bardi – med utsikt över Ponte Vecchio.</p>
+          <a class="btn" data-q="Cantina del Gelato, Via dei Bardi, Firenze">Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Öppettider, priser och tidtabeller ändras – kontrollera alltid aktuell information innan besök.</p>
+    <p>Bilder hämtas från Wikipedia/Wikimedia Commons; klicka på ”Foto”-länken i varje bild för fotograf och licens. Kartdata © OpenStreetMap-bidragsgivare.</p>
+    <p><button class="theme-toggle" type="button" data-theme-toggle>Växla ljust/mörkt tema</button></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/guide.js?v=5"></script>
+</body>
+</html>
