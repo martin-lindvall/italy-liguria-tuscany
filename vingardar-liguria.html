@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vingårdar i västra Ligurien – reseguide</title>
+  <meta name="description" content="Vingårdar med besök och gårdsförsäljning inom en timme från Civezza: Dolceacqua, Ranzo, Pornassio och Albenga.">
+  <!-- Håll sidan borta från sökmotorer och arkiv -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#c2562b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23c2562b'/%3E%3Cpath d='M18 64c14-10 22-10 32 0s18 10 32 0' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short" aria-label="Start">⌂</span></a>
+    <nav class="topnav" aria-label="Resmål">
+      <a href="liguria.html">Liguria</a>
+      <a href="toscana.html">Toscana</a>
+      <a href="./#vingardar" aria-current="page">Vin</a>
+      <a href="./#resvagar">Resvägar</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua"></figure>
+  <div class="wrap">
+    <span class="eyebrow">Vingårdar · Riviera di Ponente · Ligurien</span>
+    <h1>Vingårdar i västra Ligurien</h1>
+    <p class="lede">Vingårdar inom ungefär en timmes bilväg från Civezza som tar emot besökare eller säljer direkt från gården – grupperade efter läge.</p>
+    <div class="chips">
+      <span class="chip">🍷 Rossese · Pigato · Vermentino · Ormeasco</span>
+      <span class="chip">📞 Boka i förväg</span>
+      <span class="chip">🚗 20–45 min från Civezza</span>
+    </div>
+  </div>
+</div>
+
+<nav class="sectionnav" aria-label="Innehåll">
+  <div class="wrap">
+    <ul>
+      <li><a href="#oversikt">Översikt</a></li>
+      <li><a href="#karta">Karta</a></li>
+      <li><a href="#druvor">Druvor</a></li>
+      <li><a href="#val-prino">Val Prino</a></li>
+      <li><a href="#val-nervia">Dolceacqua</a></li>
+      <li><a href="#ranzo">Ranzo</a></li>
+      <li><a href="#pornassio">Pornassio</a></li>
+      <li><a href="#albenga">Albenga</a></li>
+      <li><a href="#praktiskt">Praktiskt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ ÖVERSIKT ============ -->
+  <section id="oversikt">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">Om vingårdarna</span>
+          <h2>Små producenter, personliga besök</h2>
+        </div>
+        <p class="big">Vinbesöken här handlar om små familjegårdar snarare än stora vinhus – ofta i bergsdalarna en bit upp från kusten.</p>
+        <p>De flesta mindre producenter kräver <strong>bokning i förväg</strong>, ofta bara via telefon eller mejl. Hör av dig några dagar innan du vill komma.</p>
+      </div>
+      <aside class="facts" aria-label="Snabbfakta">
+        <h3>Snabbfakta</h3>
+        <dl>
+          <dt>Närmast</dt><dd>Val Prino / Chiusavecchia, ca 20 min</dd>
+          <dt>Mest kända</dt><dd>Rossese di Dolceacqua, ca 35–45 min</dd>
+          <dt>Bokning</dt><dd>Krävs nästan alltid – ring eller mejla</dd>
+          <dt>Pris</dt><dd>Ca 10–25 € per person för 3–5 viner</dd>
+          <dt>Öppna helger</dt><dd>Vite in Riviera – se <a href="#praktiskt">Praktiskt</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ KARTA ============ -->
+  <section id="karta">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Karta</span>
+        <h2>Vinområdena</h2>
+        <p>Markörerna visar ungefärligt läge för varje område. Använd Google Maps-länkarna vid varje vingård för exakt adress.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map" data-map role="region" aria-label="Karta över vinområdena"></div>
+        <p class="map-note">Tidsangivelser är ungefärliga restider med bil från Civezza.</p>
+      </div>
+      <div hidden>
+        <div class="place" data-cat="bas" data-lat="43.8790" data-lng="7.9530"
+             data-name="Civezza" data-href="liguria.html" data-short="Utgångspunkt – se Liguria-guiden."></div>
+        <div class="place" data-cat="vin" data-lat="43.8810" data-lng="7.6390"
+             data-name="Gajaudo, Isolabona" data-mapq="Gajaudo, Isolabona"
+             data-short="Rossese, Vermentino och Pigato. Fasta provningar mån–lör kl. 11."></div>
+        <div class="place" data-cat="vin" data-lat="44.0470" data-lng="7.9160"
+             data-name="Pieve di Teco" data-mapq="Pieve di Teco"
+             data-short="Cascina Nirasca och Tenuta Maffone – Ormeasco."></div>
+        <div class="place" data-cat="vin" data-lat="44.0560" data-lng="8.0930"
+             data-name="Ortovero" data-mapq="Viticoltori Ingauni, Ortovero"
+             data-short="Viticoltori Ingauni."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DRUVOR ============ -->
+  <section id="druvor">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Vad dricker man?</span>
+        <h2>Druvorna i trakten</h2>
+      </div>
+      <div class="menu">
+        <div class="menu-item"><div><strong>Rossese di Dolceacqua</strong><span>Rött – Liguriens mest ansedda röda DOC, från Val Nervia vid franska gränsen.</span></div></div>
+        <div class="menu-item"><div><strong>Pigato</strong><span>Vitt – Liguriens signaturdruva, med kärnland i Ranzo, Val Arroscia och på Albenga-slätten.</span></div></div>
+        <div class="menu-item"><div><strong>Vermentino</strong><span>Vitt – friskt och odlas längs hela kusten.</span></div></div>
+        <div class="menu-item"><div><strong>Ormeasco di Pornassio</strong><span>Rött – från bergen kring Pornassio och Pieve di Teco.</span></div></div>
+        <div class="menu-item"><div><strong>Granaccia</strong><span>Rött – odlas bland annat på Albenga-slätten.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VAL PRINO ============ -->
+  <section id="val-prino">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="chiusavecchia" data-cat="vin" data-lat="43.9660" data-lng="7.9740"
+                 data-name="Ramoino, Chiusavecchia" data-mapq="Ramoino, Sarola, Chiusavecchia"
+                 data-short="Närmaste vingården – vingård och restaurang i ett.">
+          <figure class="media" data-wiki="Chiusavecchia" data-alt="Chiusavecchia" data-label="Val Prino"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Närmast</span><span class="time">ca 20 min</span></div>
+            <h3>Val Prino / Chiusavecchia</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Ramoino</strong><span class="badge">Restaurang</span></div>
+                <p>Via XX Settembre, località Sarola. Har även egen restaurang, Ristorante Ramoino, där man kan kombinera mat och vinprovning.</p>
+                <div class="w-links">
+                  <a href="tel:+39018352646">☎ +39 0183 52646</a>
+                  <a data-q="Ramoino, Sarola, Chiusavecchia">Karta ↗</a>
+                </div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="chiusavecchia">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VAL NERVIA ============ -->
+  <section id="val-nervia">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Rossese di Dolceacqua · ca 35–45 min</span>
+        <h2>Val Nervia &amp; Dolceacqua</h2>
+        <p>Rossese-vinets hemtrakt vid franska gränsen – kombinera gärna med ett besök i bergsbyarna <a href="liguria.html#berg">Dolceacqua och Apricale</a>.</p>
+      </div>
+      <div class="grid grid--2">
+
+        <article class="place" id="dolceacqua-vin" data-cat="vin" data-lat="43.8500" data-lng="7.6200"
+                 data-name="Vingårdar i Dolceacqua" data-mapq="Dolceacqua"
+                 data-short="Terre Bianche, Testalonga, Maixei, Muragni, Caldi m.fl.">
+          <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua" data-label="Dolceacqua"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Rossese</span><span class="time">ca 35–45 min</span></div>
+            <h3>I och kring Dolceacqua</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Terre Bianche</strong><span class="badge">Bokning krävs</span></div>
+                <p>Anrik gård sedan 1870, högt belägen ovanför Dolceacqua. Rossese (bland annat den prisade <em>Bricco Arcagna</em>), Vermentino, Pigato och Taggiasca-olivolja. Visning av vingård och källare, som ligger i en gammal militärbyggnad från 1930-talet, och provning i gårdens egen <em>locanda</em>.</p>
+                <div class="w-links"><a data-q="Terre Bianche, Dolceacqua">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Testalonga</strong><span class="badge">Naturvin</span></div>
+                <p>Antonio Perrino – pionjär inom naturvin i regionen.</p>
+                <div class="w-links">
+                  <a href="https://testalonga.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="mailto:perrino.testalonga@gmail.com">✉ Mejl</a>
+                  <a data-q="Testalonga, Dolceacqua">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Maixei</strong></div>
+                <p>Piazza Mauro, Dolceacqua.</p>
+                <div class="w-links">
+                  <a href="https://maixei.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="mailto:negozio@maixei.it">✉ Mejl</a>
+                  <a data-q="Maixei, Piazza Mauro, Dolceacqua">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Cantina Muragni</strong></div>
+                <p>Via Vicolo Rosso 6, Dolceacqua.</p>
+                <div class="w-links"><a data-q="Cantina Muragni, Via Vicolo Rosso 6, Dolceacqua">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Az. Agr. Caldi</strong></div>
+                <p>Via Castello 5bis, Dolceacqua.</p>
+                <div class="w-links">
+                  <a href="mailto:az.agricaldi@libero.it">✉ Mejl</a>
+                  <a data-q="Via Castello 5, Dolceacqua">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Tenuta Ascari</strong></div>
+                <p>Località Colmo.</p>
+                <div class="w-links">
+                  <a href="https://ascariwine.com" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="mailto:tenuta.ascari@libero.it">✉ Mejl</a>
+                  <a data-q="Tenuta Ascari, Dolceacqua">Karta ↗</a>
+                </div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="dolceacqua-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="gajaudo" data-cat="vin">
+          <figure class="media" data-wiki="Isolabona" data-alt="Isolabona" data-label="Isolabona"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Rossese · Vermentino · Pigato</span></div>
+            <h3>Längre upp i dalen</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Gajaudo</strong><span class="badge">Fasta provningar</span></div>
+                <p>I dag i Isolabona, mellan Isolabona och Pigna. Fasta, bokningsbara provningar <strong>mån–lör kl. 11</strong> – 3 eller 4 viner med chark och ost.</p>
+                <div class="w-links">
+                  <a href="https://gajaudo.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a data-q="Gajaudo, Isolabona">Karta ↗</a>
+                </div>
+              </li>
+            </ul>
+            <p class="also"><strong>Fler att kontakta i trakten:</strong> Foresti Marco, Maccario Dringenberg, Ramoino (i Val Nervia – inte samma gård som Ramoino i Chiusavecchia), Mauro Zino och Rondelli Roberto.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RANZO ============ -->
+  <section id="ranzo">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="ranzo-vin" data-cat="vin" data-lat="44.0590" data-lng="8.0120"
+                 data-name="Ranzo – Pigato" data-mapq="Ranzo, Imperia"
+                 data-short="Pigatons kärnland – Bruna och aMaccia.">
+          <figure class="media" data-wiki="Ranzo" data-alt="Ranzo" data-label="Ranzo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Pigato-kärnland</span><span class="time">ca 35–40 min</span></div>
+            <h3>Ranzo &amp; Val Arroscia</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Bruna</strong><span class="badge">Lördagar · bokning</span></div>
+                <p>Via Umberto I 81, Ranzo. Öppet för besök och provning varje lördag – bokning krävs.</p>
+                <div class="w-links">
+                  <a href="https://brunapigato.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="tel:+393497214868">☎ +39 349 721 4868</a>
+                  <a data-q="Bruna, Via Umberto I 81, Ranzo">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>aMaccia</strong><span class="badge">Helger · bokning</span></div>
+                <p>Via Umberto I 56, Ranzo. Öppet helger – bokning krävs.</p>
+                <div class="w-links">
+                  <a href="https://amaccia.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="tel:+393669022107">☎ +39 366 902 2107</a>
+                  <a data-q="aMaccia, Via Umberto I 56, Ranzo">Karta ↗</a>
+                </div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="ranzo-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORNASSIO ============ -->
+  <section id="pornassio">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="pornassio-vin" data-cat="vin" data-lat="44.0700" data-lng="7.8700"
+                 data-name="Pornassio – Ormeasco" data-mapq="Fontanacota, Pornassio"
+                 data-short="Ormeasco di Pornassio – rött från bergen.">
+          <figure class="media" data-wiki="Pornassio" data-alt="Pornassio" data-label="Pornassio"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Ormeasco di Pornassio</span><span class="time">ca 40–45 min</span></div>
+            <h3>Pieve di Teco &amp; Pornassio</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Fontanacota</strong></div>
+                <p>Strada Provinciale 137, Pornassio.</p>
+                <div class="w-links">
+                  <a href="https://fontanacota.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="tel:+393339807442">☎ +39 333 980 7442</a>
+                  <a data-q="Fontanacota, Pornassio">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Cascina Nirasca</strong></div>
+                <p>Via Alpi 3, Pieve di Teco (località Nirasca).</p>
+                <div class="w-links">
+                  <a href="https://cascinanirasca.org" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="tel:+393355809589">☎ +39 335 580 9589</a>
+                  <a data-q="Cascina Nirasca, Pieve di Teco">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Tenuta Maffone</strong></div>
+                <p>Pieve di Teco.</p>
+                <div class="w-links"><a data-q="Tenuta Maffone, Pieve di Teco">Karta ↗</a></div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="pornassio-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALBENGA ============ -->
+  <section id="albenga">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="albenga-vin" data-cat="vin" data-lat="44.0620" data-lng="8.1750"
+                 data-name="Albenga-slätten" data-mapq="Bastia d'Albenga"
+                 data-short="Pigato, Vermentino, Rossese och Granaccia – flera gårdar med bokningsbara provningar.">
+          <figure class="media" data-wiki="Albenga" data-alt="Albenga" data-label="Albenga"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Pigato · Vermentino · Rossese · Granaccia</span><span class="time">ca 30–40 min</span></div>
+            <h3>Albenga-slätten &amp; Ortovero</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Cascina Feipu dei Massaretti</strong><span class="badge">Bokning krävs</span></div>
+                <p>Regione Massaretti 8, Albenga. Grundad 1965, sex hektar. Visning av vingård och provning.</p>
+                <div class="w-links"><a data-q="Cascina Feipu dei Massaretti, Albenga">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>BioVio</strong><span class="badge">Ekologiskt</span></div>
+                <p>Bastia d’Albenga, ekologisk odling. Bokningsbara visningar och provningar.</p>
+                <div class="w-links">
+                  <a href="https://biovio.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a href="tel:+39018221856">☎ +39 0182 21856</a>
+                  <a data-q="BioVio, Bastia d'Albenga">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Anfossi</strong><span class="badge">Lördagar från 17</span></div>
+                <p>Bastia d’Albenga, grundad 1919. Provning lördagar från kl. 17, annars bokning.</p>
+                <div class="w-links">
+                  <a href="https://anfossi.net" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+                  <a data-q="Anfossi, Bastia d'Albenga">Karta ↗</a>
+                </div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Cantine Calleri</strong></div>
+                <p>Salea, Albenga. Historisk producent som även gör Ormeasco.</p>
+                <div class="w-links"><a data-q="Cantine Calleri, Salea, Albenga">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Enrico Dario</strong></div>
+                <p>Albenga, familjedrivet sedan 1968.</p>
+                <div class="w-links"><a data-q="Enrico Dario vini, Albenga">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Viticoltori Ingauni</strong></div>
+                <p>Ortovero.</p>
+                <div class="w-links"><a data-q="Viticoltori Ingauni, Ortovero">Karta ↗</a></div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="albenga-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRAKTISKT ============ -->
+  <section id="praktiskt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Bra att veta</span>
+        <h2>Praktiskt</h2>
+      </div>
+      <div class="grid grid--2">
+        <div class="callout">
+          <span class="icon" aria-hidden="true">📅</span>
+          <div>
+            <p><strong>Vite in Riviera – öppna helger.</strong> Flera av producenterna, särskilt kring Ranzo, Pieve di Teco och Albenga, ingår i nätverket Vite in Riviera. Det anordnar varje år öppna helger – <em>Cantine Aperte</em> och <em>Giugno in Cantina</em> – med gemensamma öppettider och utan bokningskrav.</p>
+            <p><a href="https://www.viteinriviera.it" target="_blank" rel="noopener noreferrer">viteinriviera.it ↗</a></p>
+          </div>
+        </div>
+        <div class="callout">
+          <span class="icon" aria-hidden="true">🍷</span>
+          <div>
+            <p><strong>Boka i förväg.</strong> De flesta mindre producenter kräver bokning, ofta bara via telefon eller mejl. Hör av dig några dagar innan.</p>
+            <p><strong>Pris:</strong> räkna med 10–25 € per person för 3–5 viner, ibland med focaccia eller ost.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Öppettider, priser och kontaktuppgifter ändras – kontrollera alltid med producenten innan besök.</p>
+    <p>Bilder hämtas från Wikipedia/Wikimedia Commons; klicka på ”Foto”-länken i varje bild för fotograf och licens. Kartdata © OpenStreetMap-bidragsgivare.</p>
+    <p><button class="theme-toggle" type="button" data-theme-toggle>Växla ljust/mörkt tema</button></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/guide.js?v=4"></script>
+</body>
+</html>

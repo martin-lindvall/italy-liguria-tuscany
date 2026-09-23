@@ -16,16 +16,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="assets/style.css?v=3">
+  <link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short">⌂ Start</span></a>
+    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short" aria-label="Start">⌂</span></a>
     <nav class="topnav" aria-label="Resmål">
       <a href="liguria.html">Liguria</a>
       <a href="toscana.html">Toscana</a>
+      <a href="./#vingardar">Vin</a>
       <a href="./#resvagar">Resvägar</a>
     </nav>
   </div>
@@ -74,6 +75,35 @@
             <span class="btn btn--solid">Öppna guiden →</span>
           </div>
         </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vingardar">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Vingårdar</span>
+        <h2>Vin direkt från gården</h2>
+        <p>Vingårdar med besök, provning och gårdsförsäljning – grupperade efter läge, med kontaktuppgifter.</p>
+      </div>
+      <div class="dest-grid">
+        <a class="dest dest--small" href="vingardar-liguria.html">
+          <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua" data-label=" "></figure>
+          <span class="status">Ligurien</span>
+          <div class="dest-body">
+            <h3>Västra Ligurien</h3>
+            <p>Rossese, Pigato, Vermentino och Ormeasco – inom en timme från Civezza.</p>
+            <span class="btn btn--solid">Öppna →</span>
+          </div>
+        </a>
+        <div class="dest dest--small soon">
+          <figure class="media" data-wiki="Chianti" data-alt="Vingårdar i Toscana" data-label=" "></figure>
+          <span class="status">Kommer snart</span>
+          <div class="dest-body">
+            <h3>Valdarno &amp; Toscana</h3>
+            <p>Valdarno di Sopra och Chianti Colli Aretini.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -130,6 +160,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/guide.js?v=3"></script>
+<script src="assets/guide.js?v=4"></script>
 </body>
 </html>

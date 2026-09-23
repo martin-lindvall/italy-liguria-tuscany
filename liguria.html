@@ -16,16 +16,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="assets/style.css?v=3">
+  <link rel="stylesheet" href="assets/style.css?v=4">
 </head>
 <body>
 
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short">⌂ Start</span></a>
+    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short" aria-label="Start">⌂</span></a>
     <nav class="topnav" aria-label="Resmål">
       <a href="liguria.html" aria-current="page">Liguria</a>
       <a href="toscana.html">Toscana</a>
+      <a href="./#vingardar">Vin</a>
       <a href="./#resvagar">Resvägar</a>
     </nav>
   </div>
@@ -430,20 +431,15 @@
           </div>
         </article>
 
-        <article class="place" data-cat="vin">
-          <figure class="media" data-wiki="Rossese di Dolceacqua" data-alt="Vingårdar" data-label="Rossese di Dolceacqua"></figure>
-          <div class="place-body">
-            <div class="place-meta"><span class="tag">Vin</span><span class="time">kring Dolceacqua</span></div>
-            <h3>Rossese di Dolceacqua</h3>
-            <p>Liguriens mest ansedda röda DOC. Mindre producenter i trakten – bokning krävs oftast:</p>
-            <ul>
-              <li><a data-q="Testalonga, Dolceacqua">Testalonga</a></li>
-              <li><a data-q="Maixei, Dolceacqua">Maixei</a></li>
-              <li><a data-q="Foresti vini, Camporosso">Foresti</a></li>
-              <li><a data-q="Cantina Muragni, Dolceacqua">Cantina Muragni</a></li>
-            </ul>
+        <a class="dest" href="vingardar-liguria.html" style="min-height:100%">
+          <figure class="media" data-wiki="Dolceacqua" data-alt="Dolceacqua" data-label=" "></figure>
+          <span class="status">Egen sida</span>
+          <div class="dest-body">
+            <h3>Vingårdar att besöka</h3>
+            <p>Rossese i Dolceacqua, Pigato i Ranzo, Ormeasco i Pornassio och Albenga-slättens gårdar – med kontaktuppgifter och bokningsinfo.</p>
+            <span class="btn btn--solid">Till vingårdarna →</span>
           </div>
-        </article>
+        </a>
 
       </div>
       <div class="callout" style="margin-top:22px">
@@ -578,6 +574,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/guide.js?v=3"></script>
+<script src="assets/guide.js?v=4"></script>
 </body>
 </html>
