@@ -9,6 +9,7 @@ En statisk reseguide (HTML/CSS/JS, inget byggsteg) för GitHub Pages.
 | `toscana.html` | Guide: Loro Ciuffenna & Valdarno |
 | `pisa-civezza.html` | Resväg: Pisa → Civezza med bil |
 | `vingardar-liguria.html` | Vingårdar i västra Ligurien |
+| `vingardar-toscana.html` | Vingårdar i Valdarno |
 | `assets/style.css` | Gemensam stil (ljust/mörkt tema) |
 | `assets/guide.js` | Bilder, karta, navigering |
 | `content/*.md` | Källtexterna i Markdown |

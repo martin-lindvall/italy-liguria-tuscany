@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vingårdar i Valdarno – reseguide</title>
+  <meta name="description" content="Vingårdar med besök och gårdsförsäljning nära Loro Ciuffenna: Valdarno di Sopra DOC och Chianti Colli Aretini.">
+  <!-- Håll sidan borta från sökmotorer och arkiv -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#c2562b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23c2562b'/%3E%3Cpath d='M18 64c14-10 22-10 32 0s18 10 32 0' stroke='%23fff' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='36' r='12' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="assets/style.css?v=4">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="./"><span class="brand-full">Liguria &amp; Toscana</span><span class="brand-short" aria-label="Start">⌂</span></a>
+    <nav class="topnav" aria-label="Resmål">
+      <a href="liguria.html">Liguria</a>
+      <a href="toscana.html">Toscana</a>
+      <a href="./#vingardar" aria-current="page">Vin</a>
+      <a href="./#resvagar">Resvägar</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <figure class="media" data-wiki="Chianti" data-alt="Vingårdar i Toscana"></figure>
+  <div class="wrap">
+    <span class="eyebrow">Vingårdar · Valdarno di Sopra · Toscana</span>
+    <h1>Vingårdar i Valdarno</h1>
+    <p class="lede">Valdarno di Sopra är ovanligt tätt med namnkunniga producenter – flera ligger bara några minuters bilfärd från Loro Ciuffenna.</p>
+    <div class="chips">
+      <span class="chip">🍷 Valdarno di Sopra DOC</span>
+      <span class="chip">🌿 Mycket ekologiskt</span>
+      <span class="chip">🚗 Under 15–25 min</span>
+    </div>
+  </div>
+</div>
+
+<nav class="sectionnav" aria-label="Innehåll">
+  <div class="wrap">
+    <ul>
+      <li><a href="#oversikt">Översikt</a></li>
+      <li><a href="#karta">Karta</a></li>
+      <li><a href="#vinet">Vinet</a></li>
+      <li><a href="#narmast">Loro &amp; grannbyar</a></li>
+      <li><a href="#terranuova">Terranuova &amp; Montevarchi</a></li>
+      <li><a href="#bucine">Bucine</a></li>
+      <li><a href="#cavriglia">Cavriglia</a></li>
+      <li><a href="#ovriga">Övriga</a></li>
+      <li><a href="#praktiskt">Praktiskt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ ÖVERSIKT ============ -->
+  <section id="oversikt">
+    <div class="wrap intro-grid">
+      <div>
+        <div class="section-head">
+          <span class="kicker">Om vingårdarna</span>
+          <h2>Fasta provningspaket och stora gods</h2>
+        </div>
+        <p class="big">Vingårdar inom ungefär en timmes bilväg från Loro Ciuffenna som tar emot besökare eller säljer direkt från gården – grupperade efter läge.</p>
+        <p>Till skillnad från västra Liguriens småskaliga gårdsförsäljning är flera av de toskanska godsen mer turistiskt uppbyggda, med fasta provningspaket. Boka några dagar i förväg – särskilt Il Borro och Tenuta Sette Ponti.</p>
+      </div>
+      <aside class="facts" aria-label="Snabbfakta">
+        <h3>Snabbfakta</h3>
+        <dl>
+          <dt>Närmast</dt><dd>Tenuta Sette Ponti och Il Borro, under 15 min</dd>
+          <dt>Kortast besök</dt><dd>Il Borro: 30 min källarvisning, 22 €</dd>
+          <dt>Provningar</dt><dd>Ofta ca 80–150 € per person hos de större godsen</dd>
+          <dt>Bokning</dt><dd>Några dagar i förväg</dd>
+          <dt>Jämför</dt><dd><a href="vingardar-liguria.html">Vingårdar i Ligurien</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ KARTA ============ -->
+  <section id="karta">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Karta</span>
+        <h2>Vingårdarna</h2>
+        <p>Markörerna visar ungefärligt läge. Använd Google Maps-länkarna vid varje vingård för exakt adress.</p>
+      </div>
+      <div class="map-shell">
+        <div class="map" data-map role="region" aria-label="Karta över vingårdarna"></div>
+        <p class="map-note">Tidsangivelser är ungefärliga restider med bil från Loro Ciuffenna.</p>
+      </div>
+      <div hidden>
+        <div class="place" data-cat="bas" data-lat="43.5920" data-lng="11.6300"
+             data-name="Loro Ciuffenna" data-href="toscana.html" data-short="Utgångspunkt – se Toscana-guiden."></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VINET ============ -->
+  <section id="vinet">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Vad dricker man?</span>
+        <h2>Vinerna i trakten</h2>
+      </div>
+      <div class="menu">
+        <div class="menu-item"><div><strong>Valdarno di Sopra DOC</strong><span>Går tillbaka till ett dekret av storhertig Cosimo III de’ Medici från 1716 – i dag till stor del ekologiskt certifierat.</span></div></div>
+        <div class="menu-item"><div><strong>Sangiovese</strong><span>Huvuddruvan, ofta kompletterad med internationella druvsorter.</span></div></div>
+        <div class="menu-item"><div><strong>”Super Tuscans”</strong><span>Toskanska viner utanför de klassiska reglerna – till exempel Tenuta Sette Pontis Crognolo och Oreno.</span></div></div>
+        <div class="menu-item"><div><strong>Chianti Colli Aretini</strong><span>Chianti-subzonen kring Arezzo, med producenter bland annat i Cavriglia.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NÄRMAST ============ -->
+  <section id="narmast">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Under 15 min</span>
+        <h2>I Loro Ciuffenna och grannbyarna</h2>
+      </div>
+      <div class="grid grid--2">
+
+        <article class="place" id="sette-ponti" data-cat="vin" data-lat="43.5890" data-lng="11.6350"
+                 data-name="Tenuta Sette Ponti" data-mapq="Tenuta Sette Ponti"
+                 data-short="Super Tuscans – strukturerade provningar med källarvisning.">
+          <figure class="media" data-wiki="Loro Ciuffenna" data-wiki-lang="it" data-alt="Loro Ciuffenna" data-label="Tenuta Sette Ponti"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Super Tuscans</span><span class="time">i Loro Ciuffenna</span></div>
+            <h3>Tenuta Sette Ponti</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><span class="badge">Bokning</span><span class="badge">ca 80–150 €/person</span></div>
+                <p>Vinkällaren ligger i själva Loro Ciuffenna. Kända för sina ”Super Tuscan”-viner – Crognolo, Oreno med flera. Strukturerade provningar med visning av källaren; priset beror på nivå.</p>
+                <div class="w-links"><a data-q="Tenuta Sette Ponti">Karta ↗</a></div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="sette-ponti">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="il-borro-vin" data-cat="vin" data-lat="43.5340" data-lng="11.7250"
+                 data-name="Il Borro" data-mapq="Il Borro, San Giustino Valdarno"
+                 data-short="Stort ekologiskt gods – från 30 min källarvisning till provningsmenyer.">
+          <figure class="media" data-label="Il Borro"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Ekologiskt gods</span><span class="time">San Giustino Valdarno</span></div>
+            <h3>Il Borro</h3>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><span class="badge">Boka i god tid</span><span class="badge">Från 22 €</span></div>
+                <p>Ferragamo-familjens stora ekologiska gods på 1 100 hektar, någon kilometer bort. Omfattande vinturism:</p>
+                <ul>
+                  <li><strong>Källarvisning, 30 min</strong> – 22 € per person, halva priset för 6–17 år.</li>
+                  <li><strong>Större provningsmenyer</strong> med ost eller choklad till vinet – från ca 80–95 €.</li>
+                </ul>
+                <div class="w-links">
+                  <a href="mailto:winetour@ilborro.it">✉ winetour@ilborro.it</a>
+                  <a data-q="Il Borro, San Giustino Valdarno">Karta ↗</a>
+                </div>
+              </li>
+            </ul>
+            <p class="also">Il Borro är också en medeltida by längs Setteponti-vägen – se <a href="toscana.html#il-borro">Toscana-guiden</a>.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="il-borro-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TERRANUOVA ============ -->
+  <section id="terranuova">
+    <div class="wrap">
+      <div class="grid grid--2">
+
+        <article class="place" id="romignano" data-cat="vin" data-lat="43.5620" data-lng="11.5980"
+                 data-name="Fattoria di Romignano" data-mapq="Fattoria di Romignano, Terranuova Bracciolini"
+                 data-short="Guidad vinupplevelse med provning.">
+          <figure class="media" data-wiki="Terranuova Bracciolini" data-alt="Terranuova Bracciolini" data-label="Terranuova Bracciolini"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Terranuova Bracciolini</span><span class="time">ca 15–20 min</span></div>
+            <h3>Fattoria di Romignano</h3>
+            <p>Erbjuder bland annat en guidad vinupplevelse med provning.</p>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="romignano">Visa på kartan</button>
+              <a class="btn" data-q="Fattoria di Romignano, Terranuova Bracciolini">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="place" id="mannucci-droandi" data-cat="vin" data-lat="43.4720" data-lng="11.6230"
+                 data-name="Mannucci Droandi" data-mapq="Mannucci Droandi, Caposelvi"
+                 data-short="Litet ekologiskt familjegods som räddat utrotningshotade druvsorter.">
+          <figure class="media" data-wiki="Montevarchi" data-alt="Montevarchi" data-label="Montevarchi"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Montevarchi</span><span class="time">ca 15–20 min</span></div>
+            <h3>Mannucci Droandi</h3>
+            <p>Litet familjeägt ekologiskt gods i Caposelvi, Montevarchi. Känt för att tillsammans med ett forskningsprogram i Arezzo ha räddat flera utrotningshotade toskanska druvsorter.</p>
+            <div class="w-links">
+              <a href="https://mannuccidroandi.it" target="_blank" rel="noopener noreferrer">Webb ↗</a>
+              <a href="tel:+393486540693">☎ +39 348 654 0693</a>
+            </div>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="mannucci-droandi">Visa på kartan</button>
+              <a class="btn" data-q="Mannucci Droandi, Caposelvi, Montevarchi">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUCINE ============ -->
+  <section id="bucine">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="petrolo" data-cat="vin" data-lat="43.4850" data-lng="11.5600"
+                 data-name="Petrolo" data-mapq="Petrolo, Bucine"
+                 data-short="Ett av Valdarno di Sopras mest ansedda gods – guidade visningar kl. 10 och 14.30.">
+          <figure class="media" data-wiki="Bucine" data-alt="Bucine" data-label="Petrolo"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Bucine</span><span class="time">ca 20–25 min</span></div>
+            <h3>Petrolo</h3>
+            <p>Ett av Valdarno di Sopras mest ansedda gods, med vinerna <em>Bòggina</em> och <em>Galatrona</em>. Ekologisk drift, fyra generationer i familjen Bazzocchi-Sanjust.</p>
+            <p><span class="badge" data-cat="vin">Visningar kl. 10 och 14.30</span> Bokning via formulär på webbplatsen. Godset har även agriturismo-uthyrning.</p>
+            <div class="w-links">
+              <a href="https://petrolo.it" target="_blank" rel="noopener noreferrer">Webb &amp; bokning ↗</a>
+            </div>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="petrolo">Visa på kartan</button>
+              <a class="btn" data-q="Petrolo, Mercatale Valdarno, Bucine">Google Maps ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAVRIGLIA ============ -->
+  <section id="cavriglia">
+    <div class="wrap">
+      <div class="grid">
+        <article class="place feature" id="cavriglia-vin" data-cat="vin" data-lat="43.5220" data-lng="11.4880"
+                 data-name="Cavriglia" data-mapq="Cavriglia"
+                 data-short="Poggi del Chianti och Malerba Vini – Chianti Colli Aretini.">
+          <figure class="media" data-wiki="Cavriglia" data-alt="Cavriglia" data-label="Cavriglia"></figure>
+          <div class="place-body">
+            <div class="place-meta"><span class="tag">Chianti Colli Aretini</span><span class="time">ca 20–25 min</span></div>
+            <h3>Cavriglia</h3>
+            <p>Båda erbjuder bokningsbara provningar och visningar i subzonen Chianti Colli Aretini.</p>
+            <ul class="wineries">
+              <li>
+                <div class="w-head"><strong>Cantina Poggi del Chianti</strong></div>
+                <div class="w-links"><a data-q="Poggi del Chianti, Cavriglia">Karta ↗</a></div>
+              </li>
+              <li>
+                <div class="w-head"><strong>Malerba Vini</strong></div>
+                <div class="w-links"><a data-q="Malerba Vini, Cavriglia">Karta ↗</a></div>
+              </li>
+            </ul>
+            <div class="links">
+              <button class="btn" type="button" data-show-on-map="cavriglia-vin">Visa på kartan</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÖVRIGA ============ -->
+  <section id="ovriga">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Fler att kontakta</span>
+        <h2>Övriga Valdarno di Sopra-producenter</h2>
+        <p>Konsortiet Valdarno di Sopra räknar även in dessa bland sina medlemmar – flera mindre, familjedrivna gods i området kring Bucine, Terranuova och Castelfranco. De flesta tar emot besök efter bokning.</p>
+      </div>
+      <div class="list-cards">
+        <div class="mini" data-cat="vin"><h4>La Salceta</h4><a class="btn" data-q="La Salceta vini, Valdarno">Google Maps ↗</a></div>
+        <div class="mini" data-cat="vin"><h4>Il Carnasciale</h4><a class="btn" data-q="Il Carnasciale, Valdarno">Google Maps ↗</a></div>
+        <div class="mini" data-cat="vin"><h4>Tenuta San Jacopo</h4><a class="btn" data-q="Tenuta San Jacopo, Cavriglia">Google Maps ↗</a></div>
+        <div class="mini" data-cat="vin"><h4>Podere la Madia</h4><a class="btn" data-q="Podere la Madia, Valdarno">Google Maps ↗</a></div>
+        <div class="mini" data-cat="vin"><h4>Pian del Pino</h4><a class="btn" data-q="Pian del Pino, Valdarno">Google Maps ↗</a></div>
+        <div class="mini" data-cat="vin"><h4>Migliarina e Montozzi</h4><a class="btn" data-q="Migliarina e Montozzi, Bucine">Google Maps ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRAKTISKT ============ -->
+  <section id="praktiskt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Bra att veta</span>
+        <h2>Praktiskt</h2>
+      </div>
+      <div class="grid grid--2">
+        <div class="callout">
+          <span class="icon" aria-hidden="true">📅</span>
+          <div>
+            <p><strong>Boka i förväg.</strong> Flera av godsen har fasta provningspaket. Boka några dagar i förväg – särskilt Il Borro och Tenuta Sette Ponti, som är populära.</p>
+          </div>
+        </div>
+        <div class="callout">
+          <span class="icon" aria-hidden="true">🍷</span>
+          <div>
+            <p><strong>Vinturer:</strong> guidade heldagsturer till 2–3 vingårdar med lunch på en agriturismo är vanligt förekommande i trakten.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Öppettider, priser och kontaktuppgifter ändras – kontrollera alltid med producenten innan besök.</p>
+    <p>Bilder hämtas från Wikipedia/Wikimedia Commons; klicka på ”Foto”-länken i varje bild för fotograf och licens. Kartdata © OpenStreetMap-bidragsgivare.</p>
+    <p><button class="theme-toggle" type="button" data-theme-toggle>Växla ljust/mörkt tema</button></p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/guide.js?v=4"></script>
+</body>
+</html>
