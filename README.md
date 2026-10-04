@@ -42,5 +42,5 @@ GitHub Pages i gratisversionen kräver att repot är publikt.
 
 ## Uppdatera CSS/JS
 
-Öka versionsnumret (`?v=6` → `?v=7`) i alla HTML-filer när `assets/style.css` eller
+Öka versionsnumret (`?v=7` → `?v=8`) i alla HTML-filer när `assets/style.css` eller
 `assets/guide.js` ändras, så att besökarnas webbläsare hämtar den nya versionen direkt.

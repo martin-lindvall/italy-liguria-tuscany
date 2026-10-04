@@ -16,6 +16,7 @@
     by:      "Byar & städer",
     kultur:  "Kyrkor, kloster & museer",
     berg:    "Bergsbyar",
+    schiaccia: "Schiacciata",
     mat:     "Mat & glass",
     vin:     "Vin & olivolja",
     natur:   "Natur & aktiviteter",

@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
-  <link rel="stylesheet" href="assets/style.css?v=6">
+  <link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 
@@ -53,6 +53,7 @@
       <li><a href="#dagen">Dagen</a></li>
       <li><a href="#karta">Karta</a></li>
       <li><a href="#vagn">Med vagn</a></li>
+      <li><a href="#schiacciata">Schiacciata</a></li>
       <li><a href="#lunch">Lunch</a></li>
       <li><a href="#mackor">Mackor</a></li>
       <li><a href="#middag">Middag</a></li>
@@ -78,6 +79,7 @@
           <li data-n="11:00" data-cat="bas">
             <h4>Ankomst Santa Maria Novella</h4>
             <p>Gå till <strong>Mercato Centrale</strong> (5 min) för en tidig lunch. Lugnt före 12 och plats för vagn.</p>
+            <span class="tip">🥪 Alternativ: en <a href="#schiacciata">schiacciata</a> från Forno Becagli, ca 10 min från stationen.</span>
           </li>
           <li data-n="12:30" data-cat="kultur">
             <h4>Duomo &amp; Piazza della Signoria</h4>
@@ -90,6 +92,7 @@
           <li data-n="15:00" data-cat="by">
             <h4>Oltrarno</h4>
             <p>Den lugnare sidan av staden. Bra för fika eller för att låta barnet sova i vagnen. Gå via Piazza Santo Spirito.</p>
+            <span class="tip">🥪 Sugen? <a href="#schiacciata">Schiaccia Passera</a> ligger precis vid Piazza della Passera.</span>
           </li>
           <li data-n="17:30" data-cat="natur">
             <h4>Piazzale Michelangelo</h4>
@@ -128,7 +131,7 @@
         <p>Markörerna visar ungefärligt läge – använd Google Maps-länkarna för exakt adress. Filtrera på kategori med knapparna.</p>
       </div>
       <div class="map-shell">
-        <div class="map-filters" data-map-filters data-labels='{"bas":"Stationen","kultur":"Dagens stopp","mat":"Mat","rast":"Glass & fika"}'></div>
+        <div class="map-filters" data-map-filters data-labels='{"bas":"Stationen","kultur":"Dagens stopp","schiaccia":"Schiacciata","mat":"Mat","rast":"Glass & fika"}'></div>
         <div class="map" data-map role="region" aria-label="Karta över dagens stopp och tips i Florens"></div>
       </div>
       <div hidden>
@@ -168,6 +171,73 @@
     </div>
   </section>
 
+  <!-- ============ SCHIACCIATA ============ -->
+  <section id="schiacciata">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker">Perfekt lunch</span>
+        <h2>🥪 Schiacciata – Florens bästa lunch</h2>
+        <p><em>Schiacciata</em> betyder ”tillplattad”: ett platt, olivoljigt och salt bröd som bakas i stora plåtar – krispigt utanpå, mjukt inuti. Fyllt med några få toskanska råvaror blir det en snabb, billig och god lunch. Lätt att äta på en bänk eller en piazza – perfekt med barnvagn.</p>
+      </div>
+
+      <div class="callout" style="margin-bottom:24px">
+        <span class="icon" aria-hidden="true">💡</span>
+        <div>
+          <p><strong>Så beställer du:</strong> välj få fyllningar – brödet är stjärnan. Klassiker är prosciutto toscano med pecorino, finocchiona, porchetta eller tryffelkräm. Be dem gärna skära den på mitten så är den lätt att dela.</p>
+        </div>
+      </div>
+
+      <div class="list-cards">
+        <div class="mini place highlight" data-cat="schiaccia" data-lat="43.7720" data-lng="11.2460"
+             data-name="Forno Becagli" data-mapq="Forno Becagli, Borgo Ognissanti 92, Firenze"
+             data-short="Familjebageri sedan 1909 – schiacciata utan köer, ca 10 min från stationen.">
+          <span class="hl-badge">Nära stationen</span>
+          <h4>Forno Becagli</h4>
+          <p>Familjebageri sedan 1909, Borgo Ognissanti 92/R – ca 10 min från stationen. Lokalt alternativ med färsk schiacciata, utan köer och hype. Stängt söndagar.</p>
+          <a class="btn" data-q="Forno Becagli, Borgo Ognissanti 92, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place highlight" data-cat="schiaccia" data-lat="43.7669" data-lng="11.2506"
+             data-name="Schiaccia Passera" data-mapq="Schiaccia Passera, Via dello Sprone 13, Firenze"
+             data-short="En av stadens bästa schiacciate – vid Piazza della Passera i Oltrarno.">
+          <span class="hl-badge">I Oltrarno</span>
+          <h4>Schiaccia Passera</h4>
+          <p>Via dello Sprone 13/R, vid Piazza della Passera. Ofta nämnd som en av stadens bästa schiacciate – bröd bakat på plats. Några bord inne, eller beställ i luckan och ät på torget.</p>
+          <a class="btn" data-q="Schiaccia Passera, Via dello Sprone 13, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place highlight" data-cat="schiaccia" data-lat="43.7780" data-lng="11.2590"
+             data-name="Pugi" data-mapq="Forno Pugi, Piazza San Marco 9, Firenze"
+             data-short="Bageri sedan 1925 – Florens klassiska schiacciata.">
+          <span class="hl-badge">Klassikern</span>
+          <h4>Pugi</h4>
+          <p>Piazza San Marco 9/B – bageri sedan 1925 och för många <em>den</em> klassiska schiacciatan. Köp den naturell med olivolja eller fylld. Nära Accademia. Stängt söndagar.</p>
+          <a class="btn" data-q="Forno Pugi, Piazza San Marco 9, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini place highlight" data-cat="schiaccia" data-lat="43.7690" data-lng="11.2620"
+             data-name="Lo Schiacciavino" data-mapq="Lo SchiacciaVino, Via Giuseppe Verdi 6, Firenze"
+             data-short="Liten kedja – även fullkorn och glutenfritt.">
+          <span class="hl-badge">Santa Croce</span>
+          <h4>Lo Schiacciavino</h4>
+          <p>Via Giuseppe Verdi 6/R (Santa Croce), plus fler adresser i stan. Har även schiacciata på fullkorn och glutenfri.</p>
+          <a class="btn" data-q="Lo SchiacciaVino, Via Giuseppe Verdi 6, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini highlight" data-cat="schiaccia">
+          <span class="hl-badge">Berömd</span>
+          <h4>All’Antico Vinaio</h4>
+          <p>Den mest kända – ofta lång kö, men det går fort. Se <a href="#lunch">Lunch</a>.</p>
+          <a class="btn" data-q="All'Antico Vinaio, Via dei Neri, Firenze">Google Maps ↗</a>
+        </div>
+        <div class="mini highlight" data-cat="schiaccia">
+          <span class="hl-badge">Fler att testa</span>
+          <h4>La Fettunta &amp; Schiacciamatta</h4>
+          <p><strong>La Fettunta</strong> i Santa Croce och <strong>Schiacciamatta</strong> vid Sant’Ambrogio – lokala tips som slipper de längsta köerna.</p>
+          <a class="btn" data-q="La Fettunta, Firenze">La Fettunta ↗</a>
+          <a class="btn" data-q="Schiacciamatta, Firenze">Schiacciamatta ↗</a>
+        </div>
+      </div>
+      <p class="also" style="margin-top:20px">Källor: <a href="https://eatingarounditaly.com/best-schiacciata-in-florence-italy/" target="_blank" rel="noopener noreferrer">Eating Around Italy</a>, <a href="https://italysegreta.com/11-best-panino-shops-in-florence/" target="_blank" rel="noopener noreferrer">Italy Segreta</a>, <a href="https://www.firenzemadeintuscany.com/en/article/where-to-find-the-best-schiacciata-alla-fiorentina-in-florence/" target="_blank" rel="noopener noreferrer">Firenze Made in Tuscany</a>. Kolla öppettider innan besök.</p>
+    </div>
+  </section>
+
   <!-- ============ LUNCH ============ -->
   <section id="lunch">
     <div class="wrap">
@@ -202,9 +272,10 @@
           <p>Chark och husets vin. Via del Monte alle Croci – på vägen upp mot Piazzale Michelangelo.</p>
           <a class="btn" data-q="Enoteca Fuori Porta, Via del Monte alle Croci, Firenze">Google Maps ↗</a>
         </div>
-        <div class="mini place" data-cat="mat" data-lat="43.7686" data-lng="11.2573" data-name="All'Antico Vinaio" data-mapq="All'Antico Vinaio, Via dei Neri, Firenze" data-short="Berömda panini – kö men går fort.">
+        <div class="mini place highlight" data-cat="schiaccia" data-lat="43.7686" data-lng="11.2573" data-name="All'Antico Vinaio" data-mapq="All'Antico Vinaio, Via dei Neri, Firenze" data-short="Berömda panini – kö men går fort.">
+          <span class="hl-badge">🥪 Schiacciata</span>
           <h4>All’Antico Vinaio</h4>
-          <p>Berömda panini. Ofta kö, men det går fort.</p>
+          <p>Berömda panini på schiacciata. Ofta kö, men det går fort.</p>
           <a class="btn" data-q="All'Antico Vinaio, Via dei Neri, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7682" data-lng="11.2545" data-name="'Ino" data-mapq="'Ino panini, Firenze" data-short="Panini med bra råvaror nära Uffizi.">
@@ -238,11 +309,7 @@
           <div class="menu-item"><div><strong>Panino con bollito</strong><span>Kokt nötkött med salsa verde.</span></div></div>
         </div>
         <div>
-          <div class="callout">
-            <span class="icon" aria-hidden="true">🥪</span>
-            <p><strong>Tips:</strong> köp en schiacciata, be dem skära den på mitten och ät den på en bänk eller vid Piazza Santo Spirito.</p>
-          </div>
-          <h3 style="margin-top:28px">Lokala rätter att prova</h3>
+          <h3>Lokala rätter att prova</h3>
           <div class="dishes">
             <span class="chip">Ribollita</span>
             <span class="chip">Pici</span>
@@ -409,7 +476,7 @@
           <p>Då hamnar eftermiddagen och kvällen i samma område – skönt med barnvagn.</p>
         </div>
         <ol class="steps">
-          <li data-n="1" data-cat="mat"><h4>Lunch på Mercato Centrale</h4><p>Tidigt, före 12, när det är lugnt.</p></li>
+          <li data-n="1" data-cat="mat"><h4>Lunch på Mercato Centrale</h4><p>Tidigt, före 12, när det är lugnt – eller en schiacciata från Forno Becagli på vägen.</p></li>
           <li data-n="2" data-cat="rast"><h4>Glass på la Carraia eller Sbrino</h4><p>Båda i eller vid Oltrarno.</p></li>
           <li data-n="3" data-cat="mat"><h4>Middag på Il Santo Bevitore</h4><p>Boka bord i förväg.</p></li>
         </ol>
@@ -454,6 +521,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/guide.js?v=6"></script>
+<script src="assets/guide.js?v=7"></script>
 </body>
 </html>
