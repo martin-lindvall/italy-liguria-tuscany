@@ -242,7 +242,7 @@
       const marker = L.marker([lat, lng], { icon: icon, title: name, riseOnHover: true }).bindPopup(html);
       layers[cat].addLayer(marker);
       if (el.id) markersById[el.id] = { marker: marker, cat: cat };
-      bounds.push([lat, lng]);
+      if (!el.hasAttribute("data-nofit")) bounds.push([lat, lng]);
     }
 
     const route = el.getAttribute("data-route");
@@ -252,7 +252,7 @@
       const solid = el.getAttribute("data-route-style") === "solid";
       L.polyline(pts, { color: color, weight: solid ? 6 : 5, opacity: .85, dashArray: solid ? null : "2 8", lineCap: "round" })
         .bindPopup(html).addTo(layers[cat]);
-      pts.forEach((p) => bounds.push(p));
+      if (!el.hasAttribute("data-nofit")) pts.forEach((p) => bounds.push(p));
     }
   });
 
