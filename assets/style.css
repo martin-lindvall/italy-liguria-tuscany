@@ -414,6 +414,7 @@ section + section { border-top: 1px solid var(--line); }
   background: var(--c, var(--accent)); color: #fff;
 }
 .mini > .hl-badge, .mini > .btn { align-self: flex-start; }
+.mini .hours { font-size: .85rem; margin: -2px 0 10px; color: var(--ink); padding: 6px 10px; border-radius: 8px; background: var(--surface-2); }
 .mini .src { font-size: .78rem; color: var(--ink-soft); margin: 0 0 8px; }
 
 /* ---------- Gångavstånd ---------- */

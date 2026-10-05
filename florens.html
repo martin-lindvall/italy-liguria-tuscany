@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
-  <link rel="stylesheet" href="assets/style.css?v=8">
+  <link rel="stylesheet" href="assets/style.css?v=9">
 </head>
 <body>
 
@@ -534,6 +534,7 @@
         <span class="kicker">Mat &amp; dryck</span>
         <h2>Lunch</h2>
         <p><span class="star">★</span> = tips från Primavera Contents matguide till Florens (se <a href="#tank-pa">källa</a>).</p>
+        <p>Vill ni hellre sitta ner? Alla <a href="#middag">middagsrestauranger</a> serverar också lunch – i Oltrarno är Trattoria Casalinga, Osteria Santo Spirito och Il Santo Bevitore smidiga val.</p>
       </div>
       <div class="list-cards">
         <div class="mini" data-cat="mat">
@@ -638,62 +639,73 @@
       <div class="section-head">
         <span class="kicker">Nästan alla i Oltrarno</span>
         <h2>Middag</h2>
-        <p>Restaurangerna öppnar runt 19. Boka bord.</p>
+        <p>Restaurangerna öppnar runt 19 – boka bord. <strong>Alla har även lunchöppet</strong> – tider och stängda dagar står på varje kort.</p>
       </div>
       <div class="list-cards">
         <div class="mini place" data-cat="mat" data-lat="43.7695" data-lng="11.2470" data-name="Il Santo Bevitore" data-mapq="Il Santo Bevitore, Via Santo Spirito 64, Firenze" data-short="Guidens absoluta favorit. Boka bord.">
           <h4><span class="star">★</span> Il Santo Bevitore</h4>
           <p>Guidens absoluta favorit. Via Santo Spirito 64/R. <span class="badge" data-cat="mat">Boka bord</span></p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:30–14:30 · ej lunch måndag</p>
           <a class="btn" data-q="Il Santo Bevitore, Via Santo Spirito 64, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7676" data-lng="11.2510" data-name="Trattoria Cammillo" data-mapq="Trattoria Cammillo, Borgo San Jacopo 57, Firenze" data-short="Klassiker med enormt stor meny.">
           <h4><span class="star">★</span> Trattoria Cammillo</h4>
           <p>Klassiker med enormt stor meny. Borgo San Jacopo 57/R.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 · stängt tis–ons, torsdag bara middag</p>
           <a class="btn" data-q="Trattoria Cammillo, Borgo San Jacopo 57, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7668" data-lng="11.2507" data-name="5eCinque" data-mapq="5eCinque, Piazza della Passera, Firenze" data-short="Litet och mysigt vid Piazza della Passera.">
           <h4><span class="star">★</span> 5eCinque</h4>
           <p>Litet och mysigt vid Piazza della Passera.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 ons–sön · stängt mån–tis · vegetariskt</p>
           <a class="btn" data-q="5eCinque, Piazza della Passera, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7672" data-lng="11.2460" data-name="Trattoria Sant'Agostino" data-mapq="Trattoria Sant'Agostino, Firenze" data-short="Prova gnudi om de har.">
           <h4><span class="star">★</span> Trattoria Sant’Agostino</h4>
           <p>Prova <em>gnudi</em> om de har.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> ca 12:00–15:00 · uppgifterna varierar, ev. stängt måndag</p>
           <a class="btn" data-q="Trattoria Sant'Agostino, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7745" data-lng="11.2470" data-name="Osteria Pastella" data-mapq="Osteria Pastella, Via della Scala 17, Firenze" data-short="Tryffelpasta som blandas i en parmesanost.">
           <h4><span class="star">★</span> Osteria Pastella</h4>
           <p>Tryffelpasta som blandas i en parmesanost. Via della Scala 17/R – nära stationen.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 alla dagar</p>
           <a class="btn" data-q="Osteria Pastella, Via della Scala 17, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7700" data-lng="11.2420" data-name="All'Antico Ristoro di Cambi" data-mapq="All'Antico Ristoro di Cambi, Via Sant'Onofrio 1, Firenze" data-short="Guidens val för bistecca fiorentina.">
           <h4><span class="star">★</span> All’Antico Ristoro di Cambi</h4>
           <p>Guidens val för bistecca fiorentina. Via Sant’Onofrio 1/R.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 mån–lör · söndag oklart</p>
           <a class="btn" data-q="All'Antico Ristoro di Cambi, Via Sant'Onofrio 1, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini" data-cat="mat">
           <h4><span class="star">★</span> Alla Vecchia Bettola</h4>
           <p>Traditionell toskansk mat, Viale Vasco Pratolini. Ett stycke från centrum – räkna med taxi eller en längre promenad.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 tis–lör · stängt sön–mån</p>
           <a class="btn" data-q="Alla Vecchia Bettola, Viale Vasco Pratolini, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7697" data-lng="11.2650" data-name="Trattoria L'Ortone" data-mapq="Trattoria L'Ortone, Piazza Ghiberti 87, Firenze" data-short="Toskanskt med modern twist – norra sidan av Arno.">
           <h4><span class="star">★</span> Trattoria L’Ortone</h4>
           <p>Toskanskt med modern twist. Piazza Ghiberti 87/R – det enda stället på norra sidan av Arno.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:15–14:30 alla dagar</p>
           <a class="btn" data-q="Trattoria L'Ortone, Piazza Ghiberti 87, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7663" data-lng="11.2475" data-name="Osteria Santo Spirito" data-mapq="Osteria Santo Spirito, Firenze" data-short="Uteservering vid torget – bra med vagn.">
           <h4>Osteria Santo Spirito</h4>
           <p>Uteservering vid torget – bra med vagn.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:15–14:15 · stängt tisdag</p>
           <a class="btn" data-q="Osteria Santo Spirito, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7662" data-lng="11.2490" data-name="Trattoria Casalinga" data-mapq="Trattoria Casalinga, Firenze" data-short="Enkel, prisvärd husmanskost – bra för familjer.">
           <h4>Trattoria Casalinga</h4>
           <p>Enkel och prisvärd husmanskost – bra för familjer.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:00–14:30 mån–lör · stängt söndag</p>
           <a class="btn" data-q="Trattoria Casalinga, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" data-cat="mat" data-lat="43.7735" data-lng="11.2460" data-name="Trattoria Sostanza" data-mapq="Trattoria Sostanza, Firenze" data-short="Smörkyckling och bistecca. Boka i god tid.">
           <h4>Trattoria Sostanza</h4>
           <p>Känd för smörkyckling och bistecca. Trångt – boka i god tid.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> 12:30–14:00 mån–fre · stängt lör–sön</p>
           <a class="btn" data-q="Trattoria Sostanza, Firenze">Google Maps ↗</a>
         </div>
         <div class="mini place" id="quattro-leoni" data-cat="mat" data-lat="43.7666" data-lng="11.2508"
@@ -701,6 +713,7 @@
              data-short="Klassisk toskansk mat vid Piazza della Passera.">
           <h4>Trattoria 4 Leoni</h4>
           <p>Vid Piazza della Passera – klassisk toskansk mat i Oltrarno.</p>
+          <p class="hours">🍽 <strong>Lunch:</strong> från 12:00 alla dagar</p>
           <a class="btn" data-q="Trattoria 4 Leoni, Firenze">Google Maps ↗</a>
         </div>
       </div>
@@ -859,6 +872,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/guide.js?v=8"></script>
+<script src="assets/guide.js?v=9"></script>
 </body>
 </html>
