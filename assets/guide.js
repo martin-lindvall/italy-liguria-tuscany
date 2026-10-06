@@ -184,6 +184,70 @@
     byId.forEach((_, id) => { const s = document.getElementById(id); if (s) spy.observe(s); });
   }
 
+  /* ---------- Export till Google My Maps (KML) ---------- */
+  function buildKml() {
+    const xml = (t) => String(t).replace(/[<>&'"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", "'": "&apos;", '"': "&quot;" }[c]));
+    let labels = {};
+    const f = document.querySelector("[data-map-filters]");
+    try { labels = JSON.parse((f && f.getAttribute("data-labels")) || "{}"); } catch (e) { /* ignorera */ }
+    const groups = {};
+    const seen = new Set();
+    document.querySelectorAll(".place[data-lat][data-lng]").forEach((el) => {
+      const lat = parseFloat(el.getAttribute("data-lat"));
+      const lng = parseFloat(el.getAttribute("data-lng"));
+      if (isNaN(lat) || isNaN(lng)) return;
+      const cat = el.getAttribute("data-cat") || "by";
+      const nameEl = el.querySelector("h3, h4");
+      const name = el.getAttribute("data-name") || (nameEl ? nameEl.textContent.replace("★", "").trim() : "");
+      const key = name + "|" + lat + "|" + lng;
+      if (seen.has(key)) return;
+      seen.add(key);
+      const q = el.getAttribute("data-mapq") || name;
+      const desc = (el.getAttribute("data-short") || "") + "\n" + gmaps(q);
+      let geo = "";
+      if (!el.hasAttribute("data-nomarker")) {
+        geo += "<Placemark><name>" + xml(name) + "</name><description>" + xml(desc) + "</description>" +
+          "<Point><coordinates>" + lng + "," + lat + ",0</coordinates></Point></Placemark>";
+      }
+      const route = el.getAttribute("data-route");
+      if (route) {
+        const coords = route.split(";").map((pt) => { const [a, b] = pt.split(","); return b + "," + a + ",0"; }).join(" ");
+        geo += "<Placemark><name>" + xml(name + " (ungefärlig sträckning)") + "</name><description>" + xml(desc) + "</description>" +
+          "<LineString><tessellate>1</tessellate><coordinates>" + coords + "</coordinates></LineString></Placemark>";
+      }
+      const g = labels[cat] || CATS[cat] || cat;
+      (groups[g] = groups[g] || []).push(geo);
+    });
+    const title = document.title.replace(/ – .*$/, "");
+    return '<?xml version="1.0" encoding="UTF-8"?>\n<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>' + xml(title) + "</name>" +
+      Object.keys(groups).map((g) => "<Folder><name>" + xml(g) + "</name>" + groups[g].join("") + "</Folder>").join("") +
+      "</Document></kml>";
+  }
+
+  document.querySelectorAll(".map-shell").forEach((shell) => {
+    if (!document.querySelector(".place[data-lat][data-lng]")) return;
+    const box = document.createElement("div");
+    box.className = "kml-box";
+    box.innerHTML =
+      '<button type="button" class="btn">⬇ Spara alla platser till Google Maps (KML)</button>' +
+      '<details><summary>Så gör du</summary><ol>' +
+      '<li>Klicka på knappen – en <code>.kml</code>-fil laddas ner.</li>' +
+      '<li>Öppna <a href="https://www.google.com/maps/d/" target="_blank" rel="noopener noreferrer">Google My Maps</a> (enklast på dator), välj <strong>Skapa ny karta</strong> och sedan <strong>Importera</strong>, och välj filen.</li>' +
+      '<li>Kartan finns sedan i Google Maps-appen under <strong>Du → Kartor</strong> (eller <strong>Sparat → Kartor</strong>), med alla platser grupperade som här.</li>' +
+      "</ol></details>";
+    box.querySelector("button").addEventListener("click", () => {
+      const blob = new Blob([buildKml()], { type: "application/vnd.google-earth.kml+xml" });
+      const a = document.createElement("a");
+      const slug = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "") || "index";
+      a.href = URL.createObjectURL(blob);
+      a.download = "reseguide-" + slug + ".kml";
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    });
+    shell.appendChild(box);
+  });
+
   /* ---------- Karta (Leaflet + OpenStreetMap) ---------- */
   const mapEl = document.querySelector("[data-map]");
   if (!mapEl) return;

@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
-  <link rel="stylesheet" href="assets/style.css?v=9">
+  <link rel="stylesheet" href="assets/style.css?v=10">
 </head>
 <body>
 
@@ -202,6 +202,7 @@
           <dt>Lunch</dt><dd>Mercato Centrale, 5 min från stationen</dd>
           <dt>Solnedgång</dt><dd>Ca 18:30 i början av oktober</dd>
           <dt>Boka</dt><dd>Middagsbord – och kolla sista tåget/spårvagnen hem</dd>
+          <dt>Karta</dt><dd><a href="#karta">Dagens runda i Google Maps →</a></dd>
           <dt>Kortare dag</dt><dd>Hoppa över Piazzale Michelangelo och ät middag närmare stationen</dd>
         </dl>
       </aside>
@@ -219,6 +220,16 @@
       <div class="map-shell">
         <div class="map-filters" data-map-filters data-labels='{"bas":"Stationen","trafik":"Parkering & spårvagn","kultur":"Sevärdheter","by":"Oltrarno","schiaccia":"Schiacciata","mat":"Mat","rast":"Glass & fika"}'></div>
         <div class="map" data-map role="region" aria-label="Karta över Florens"></div>
+      </div>
+      <h3 style="margin-top:32px">Färdiga vägbeskrivningar i Google Maps</h3>
+      <p style="color:var(--ink-soft);max-width:720px">Öppnas direkt i Google Maps-appen på mobilen. Promenadrundan följer dagsschemat – sista biten upp till Piazzale Michelangelo tar ni hellre med taxi eller buss 12/13.</p>
+      <div class="gm-links">
+        <a class="gm-link" data-cat="kultur" href="https://www.google.com/maps/dir/?api=1&amp;origin=Firenze%20Santa%20Maria%20Novella&amp;destination=Piazzale%20Michelangelo%2C%20Firenze&amp;waypoints=Mercato%20Centrale%2C%20Firenze%7CCattedrale%20di%20Santa%20Maria%20del%20Fiore%2C%20Firenze%7CPiazza%20della%20Signoria%2C%20Firenze%7CGelateria%20Vivoli%2C%20Firenze%7CPonte%20Vecchio%2C%20Firenze%7CPiazza%20Santo%20Spirito%2C%20Firenze&amp;travelmode=walking" target="_blank" rel="noopener noreferrer"><strong>🚶 Dagens promenadrunda ↗</strong><span>Stationen → Mercato Centrale → Duomo → Signoria → Vivoli → Ponte Vecchio → Santo Spirito → Piazzale Michelangelo</span></a>
+        <a class="gm-link" data-cat="by" href="https://www.google.com/maps/dir/?api=1&amp;origin=Firenze%20Santa%20Maria%20Novella&amp;destination=Il%20Santo%20Bevitore%2C%20Via%20Santo%20Spirito%2064%2C%20Firenze&amp;waypoints=Mercato%20Centrale%2C%20Firenze%7CCattedrale%20di%20Santa%20Maria%20del%20Fiore%2C%20Firenze%7CPiazza%20della%20Signoria%2C%20Firenze%7CGelateria%20Vivoli%2C%20Firenze%7CPonte%20Vecchio%2C%20Firenze%7CPiazza%20Santo%20Spirito%2C%20Firenze&amp;travelmode=walking" target="_blank" rel="noopener noreferrer"><strong>🚶 Kortare runda utan backen ↗</strong><span>Samma runda men slutar med middag på Il Santo Bevitore i Oltrarno</span></a>
+        <a class="gm-link" data-cat="mat" href="https://www.google.com/maps/dir/?api=1&amp;origin=Il%20Santo%20Bevitore%2C%20Via%20Santo%20Spirito%2064%2C%20Firenze&amp;destination=Firenze%20Santa%20Maria%20Novella&amp;travelmode=walking" target="_blank" rel="noopener noreferrer"><strong>🚶 Från middagen till tåget ↗</strong><span>Il Santo Bevitore → Santa Maria Novella</span></a>
+        <a class="gm-link" data-cat="bas" href="https://www.google.com/maps/dir/?api=1&amp;origin=Stazione%20di%20San%20Giovanni%20Valdarno&amp;destination=Firenze%20Santa%20Maria%20Novella&amp;travelmode=transit" target="_blank" rel="noopener noreferrer"><strong>🚆 Tåg: San Giovanni Valdarno → Florens ↗</strong><span>Kollektivtrafik med aktuella avgångar</span></a>
+        <a class="gm-link" data-cat="bas" href="https://www.google.com/maps/dir/?api=1&amp;origin=Loro%20Ciuffenna&amp;destination=Stazione%20di%20San%20Giovanni%20Valdarno&amp;travelmode=driving" target="_blank" rel="noopener noreferrer"><strong>🚗 Bil: Loro Ciuffenna → tågstationen ↗</strong><span>San Giovanni Valdarno station, ca 15–20 min</span></a>
+        <a class="gm-link" data-cat="trafik" href="https://www.google.com/maps/dir/?api=1&amp;origin=Loro%20Ciuffenna&amp;destination=Parcheggio%20Villa%20Costanza%2C%20Scandicci&amp;travelmode=driving" target="_blank" rel="noopener noreferrer"><strong>🚗 Bil: Loro Ciuffenna → Villa Costanza ↗</strong><span>Park &amp; ride vid A1, sedan spårvagn T1 in till stan</span></a>
       </div>
       <div hidden>
         <div class="place" data-cat="bas" data-lat="43.7765" data-lng="11.2480"
@@ -872,6 +883,6 @@
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="assets/guide.js?v=9"></script>
+<script src="assets/guide.js?v=10"></script>
 </body>
 </html>
